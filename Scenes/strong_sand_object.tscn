@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://fp04htwo0bhm"]
+
+[ext_resource type="Script" path="res://Scripts/sand_object.gd" id="1_npofh"]
+[ext_resource type="Texture2D" uid="uid://5810a0p0bj4e" path="res://Sprites/strong_sand_obj.png" id="2_4exvo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_anv40"]
+size = Vector2(109, 79)
+
+[node name="StrongSandObject" type="Area2D" groups=["SandObj"]]
+script = ExtResource("1_npofh")
+hp = 2
+pointValue = 3
+type = "Strong"
+
+[node name="SandObject" type="Sprite2D" parent="."]
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("2_4exvo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_anv40")
