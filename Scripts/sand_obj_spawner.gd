@@ -3,10 +3,6 @@ extends Node2D
 @onready var SandObj:PackedScene = preload("res://Scenes/sand_object.tscn")
 @onready var StrongSandObj:PackedScene = preload("res://Scenes/strong_sand_object.tscn")
 
-var canSpawn : bool = true
-
-func _ready() -> void:
-	GLOBAL.onDayEnded.connect(endSpawnCycle)
 
 func spawn() -> void:
 	#generate a random number and then spawn the normal or heavy sand obj
@@ -38,7 +34,4 @@ func get_random_screen_position() -> Vector2:
 	return Vector2(random_x, random_y)
 
 func _on_timer_timeout() -> void:
-	if(canSpawn):spawn()
-
-func endSpawnCycle() -> void:
-	canSpawn = false
+	if(GLOBAL.isDayCycleRunning):spawn()

@@ -5,3 +5,5 @@ res://Scenes/sand_object.tscn
 res://Scenes/wave_spawner.tscn
 res://Scenes/sand_obj_spawner.tscn
 res://Scenes/ui.tscn
+res://Scripts/UI.gd
+res://Scripts/sand_obj_spawner.gd

@@ -41,3 +41,13 @@ offset_left = 1085.0
 offset_top = 602.0
 offset_right = 1152.0
 offset_bottom = 647.0
+
+[node name="NextDayButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 446.0
+offset_top = 260.0
+offset_right = 714.0
+offset_bottom = 390.0
+text = "Start Next Day"
+
+[connection signal="pressed" from="NextDayButton" to="." method="_on_next_day_button_pressed"]

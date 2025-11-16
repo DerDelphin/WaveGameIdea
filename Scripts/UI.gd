@@ -3,11 +3,14 @@ extends Control
 @onready var PointText : Label = $Points
 @onready var ClockText : Label = $Clock
 @onready var WaveCoolDownDisplay : ProgressBar = $ProgressBar
+@onready var NextDayButton: Button = $NextDayButton
 
 #region ready and process
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	NextDayButton.visible = false
 	GLOBAL.onPointsIncreased.connect(changePointText)
+	GLOBAL.onDayEnded.connect(EnableUpgradeMenu)
 	WaveCoolDownDisplay.value = 0
 	WaveCoolDownDisplay.max_value = GLOBAL.waveCoolDown
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -34,3 +37,13 @@ func get_game_time_string() -> String:
 
 	# Formatieren
 	return "%02d:%02d" % [hours, minutes]
+
+func EnableUpgradeMenu() -> void:
+	NextDayButton.visible = true
+
+
+func _on_next_day_button_pressed() -> void:
+	NextDayButton.visible = false
+	GLOBAL.isDayCycleRunning = true
+	GLOBAL.points = 0
+	GLOBAL.onPointsIncreased.emit()
