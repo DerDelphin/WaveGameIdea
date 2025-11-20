@@ -6,7 +6,7 @@ var isDayCycleRunning: bool = true
 ##the current dayTime
 var day_time: float = 0.0
 var dayCount: int = 1
-const DAY_DURATION := 3.0
+const DAY_DURATION := 120.0
 
 signal onPointsIncreased
 signal onDayEnded

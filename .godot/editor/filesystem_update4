@@ -7,3 +7,6 @@ res://Scenes/sand_obj_spawner.tscn
 res://Scenes/strong_sand_object.tscn
 res://Scripts/GLOBAL.gd
 res://Scripts/wave_spawner.gd
+res://Scenes/destruction_point_indicator.tscn
+res://Scripts/sand_object.gd
+res://Scripts/destruction_point_indicator.gd
