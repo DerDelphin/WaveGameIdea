@@ -1,9 +1,9 @@
-res://Scenes/strong_sand_object.tscn
+res://Scenes/ui.tscn
 res://Scenes/world.tscn
 res://Scenes/wave.tscn
 res://Scenes/sand_object.tscn
 res://Scenes/wave_spawner.tscn
 res://Scenes/sand_obj_spawner.tscn
-res://Scenes/ui.tscn
-res://Scripts/UI.gd
-res://Scripts/sand_obj_spawner.gd
+res://Scenes/strong_sand_object.tscn
+res://Scripts/GLOBAL.gd
+res://Scripts/wave_spawner.gd

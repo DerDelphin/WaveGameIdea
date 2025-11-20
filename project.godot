@@ -19,6 +19,7 @@ config/icon="res://Sprites/icon.svg"
 [autoload]
 
 GLOBAL="*res://Scripts/GLOBAL.gd"
+UpgradeManager="*res://Scripts/UpgradeManager.gd"
 
 [input]
 

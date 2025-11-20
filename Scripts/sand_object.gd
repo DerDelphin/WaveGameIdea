@@ -6,8 +6,13 @@ extends Area2D
 
 var damagedSprite : CompressedTexture2D = preload("res://Sprites/strong_sand_obj_damaged.png")
 
-func TakeDamage() -> void:
-	hp -= 1
+func TakeDamage(amount:int = 0) -> void:
+	# default (no amount provided)
+	if(amount == 0):
+		hp -= 1
+	# other (amount provided)
+	else: 
+		hp -= amount
 	if(hp < 1):
 		addPoints(pointValue)
 		queue_free()

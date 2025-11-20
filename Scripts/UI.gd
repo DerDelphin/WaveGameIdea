@@ -3,16 +3,20 @@ extends Control
 @onready var PointText : Label = $Points
 @onready var ClockText : Label = $Clock
 @onready var WaveCoolDownDisplay : ProgressBar = $ProgressBar
-@onready var NextDayButton: Button = $NextDayButton
+@onready var UpgradeButtonsContainer : BoxContainer = $UpgradeButtons
+
+
 
 #region ready and process
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	NextDayButton.visible = false
+	for child in UpgradeButtonsContainer.get_children():
+		child.visible = false
+		
 	GLOBAL.onPointsIncreased.connect(changePointText)
 	GLOBAL.onDayEnded.connect(EnableUpgradeMenu)
 	WaveCoolDownDisplay.value = 0
-	WaveCoolDownDisplay.max_value = GLOBAL.waveCoolDown
+	WaveCoolDownDisplay.max_value = UpgradeManager.WaveDelay
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	ClockText.text = get_game_time_string()
@@ -39,11 +43,34 @@ func get_game_time_string() -> String:
 	return "%02d:%02d" % [hours, minutes]
 
 func EnableUpgradeMenu() -> void:
-	NextDayButton.visible = true
+	for child in UpgradeButtonsContainer.get_children():
+		child.visible = true
+	displayUpgrades()
 
-
-func _on_next_day_button_pressed() -> void:
-	NextDayButton.visible = false
+func onUpgradeButtonWasPressed(upgrade: String) -> void:
+	#apply the Upgrade
+	match upgrade:
+		"WaveBaseSpeed+": UpgradeManager.WaveBaseSpeed += .2;
+		"WavePower+": UpgradeManager.WavePower += 1
+		"WaveDelay-": UpgradeManager.WaveDelay -= .2; UpgradeManager.WaveDelayChanged.emit()
+		"WaveSize+": UpgradeManager.WaveSize += 1
+		
+	#disabnle the upgrade menu
+	for child in UpgradeButtonsContainer.get_children():
+		child.visible = false
 	GLOBAL.isDayCycleRunning = true
 	GLOBAL.points = 0
 	GLOBAL.onPointsIncreased.emit()
+func displayUpgrades() -> void:
+	var usedUpgrades: Array[String] = []
+	for child in UpgradeButtonsContainer.get_children():
+		var Upgrade: String = UpgradeManager.UpgradeList.pick_random()
+		#avoid duplicates
+		if not usedUpgrades.has(Upgrade):
+			usedUpgrades.append(Upgrade)
+			child.text = Upgrade
+			
+			# Disconnect any previously connected function to avoid problems
+			if child.pressed.is_connected(onUpgradeButtonWasPressed):
+				child.pressed.disconnect(onUpgradeButtonWasPressed)
+			child.pressed.connect(func(): onUpgradeButtonWasPressed(Upgrade))

@@ -7,6 +7,9 @@ signal cooldown_updated(cooldown_percent : float)
 var canSpawn: bool = true
 
 func _ready() -> void:
+	CooldownTimer.wait_time = UpgradeManager.WaveDelay
+	UpgradeManager.WaveDelayChanged.connect(
+		func(): CooldownTimer.wait_time = clamp(UpgradeManager.WaveDelay,0,100000))
 	var uiObj = get_tree().get_first_node_in_group("UI")
 	if(uiObj.has_method("updateCooldownDisplay")):
 		cooldown_updated.connect(uiObj.updateCooldownDisplay)

@@ -8,12 +8,12 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	global_position += Vector2.UP * delta * speed
+	global_position += Vector2.UP * delta * speed * UpgradeManager.WaveBaseSpeed
 
 func _on_kill_timer_timeout() -> void: queue_free()
 
 func _on_area_entered(area: Area2D) -> void:
 	if(area.is_in_group("SandObj")):
-		area.TakeDamage()
+		area.TakeDamage(UpgradeManager.WavePower)
 	if(area.is_in_group("Beach")):
 		queue_free()
