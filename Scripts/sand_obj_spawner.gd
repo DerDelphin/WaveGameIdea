@@ -1,8 +1,9 @@
 extends Node2D
+class_name SandObjSpawner
 
 @onready var SandObj:PackedScene = preload("res://Scenes/sand_object.tscn")
 @onready var StrongSandObj:PackedScene = preload("res://Scenes/strong_sand_object.tscn")
-
+var spawnedNum: int = 0
 
 func spawn() -> void:
 	#generate a random number and then spawn the normal or heavy sand obj
@@ -16,6 +17,7 @@ func spawn() -> void:
 	#eitherway position it and then add it to the scene
 	instance.global_position = get_random_screen_position()
 	add_child(instance)
+	spawnedNum += 1
 
 ## Funktion zum Berechnen einer zufälligen Position im oberen Bereich des Bildschirms
 func get_random_screen_position() -> Vector2:

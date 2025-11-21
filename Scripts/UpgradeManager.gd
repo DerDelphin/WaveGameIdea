@@ -7,7 +7,7 @@ var WaveDelay = 1
 var UpgradeList: Array[String] = ["WaveSize+", "WavebaseSpeed+", "WavePower+","WaveDelay-"]
 
 signal WaveDelayChanged
-#signal WaveSizeChanged
+signal WaveSizeChanged
 
 func _ready() -> void:
 	# Ensure that there are no wrong values at start

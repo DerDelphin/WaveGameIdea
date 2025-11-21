@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvhouoin1r6mh"]
+
+[ext_resource type="Script" path="res://Scripts/overcrowd_meter.gd" id="1_fsusf"]
+[ext_resource type="Texture2D" uid="uid://bnx6m5r7j7q6i" path="res://Sprites/sand_obj_indicated.png" id="1_q4jgd"]
+
+[node name="OvercrowdMeter" type="BoxContainer"]
+offset_left = 11.0
+offset_top = 568.0
+offset_right = 185.0
+offset_bottom = 643.0
+script = ExtResource("1_fsusf")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_q4jgd")
+expand_mode = 3
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_q4jgd")
+expand_mode = 3
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_q4jgd")
+expand_mode = 3

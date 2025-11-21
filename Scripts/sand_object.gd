@@ -18,8 +18,10 @@ func TakeDamage(amount:int = 0) -> void:
 		addPoints(pointValue)
 		var instance = destructionIndicator.instantiate()
 		instance.global_position = self.global_position
-		instance.get_child(0).text = str(pointValue)
+		instance.get_child(0).text = "+ " + str(pointValue)
 		add_sibling(instance)
+		var sandObjSpawner = get_tree().get_first_node_in_group("SandObjSpawner")
+		sandObjSpawner.spawnedNum -= 1
 		queue_free()
 	if(type == "Strong"):
 		$SandObject.texture = damagedSprite

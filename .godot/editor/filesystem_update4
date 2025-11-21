@@ -5,8 +5,13 @@ res://Scenes/sand_object.tscn
 res://Scenes/wave_spawner.tscn
 res://Scenes/sand_obj_spawner.tscn
 res://Scenes/strong_sand_object.tscn
-res://Scripts/GLOBAL.gd
-res://Scripts/wave_spawner.gd
 res://Scenes/destruction_point_indicator.tscn
+res://Scripts/UI.gd
+res://Scripts/GLOBAL.gd
+res://Scenes/VignetteShader.gd
+res://VignetteShader.gdshader
+res://Scenes/overcrowd_meter.tscn
+res://Scripts/overcrowd_meter.gd
+res://Scripts/sand_obj_spawner.gd
 res://Scripts/sand_object.gd
-res://Scripts/destruction_point_indicator.gd
+res://Scripts/WaveType.gd

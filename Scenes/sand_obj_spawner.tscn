@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/sand_obj_spawner.gd" id="1_sw60h"]
 
-[node name="SandObjSpawner" type="Node2D"]
+[node name="SandObjSpawner" type="Node2D" groups=["SandObjSpawner"]]
 script = ExtResource("1_sw60h")
 
 [node name="Timer" type="Timer" parent="."]
