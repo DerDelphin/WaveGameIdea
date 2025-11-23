@@ -1,18 +1,62 @@
-[gd_scene load_steps=6 format=3 uid="uid://byov6ik07p5gv"]
+[gd_scene load_steps=14 format=3 uid="uid://byov6ik07p5gv"]
 
 [ext_resource type="Texture2D" uid="uid://d21x7odtpplk8" path="res://Sprites/icon.svg" id="1_11f64"]
 [ext_resource type="PackedScene" uid="uid://df4g0piy0xhj5" path="res://Scenes/wave_spawner.tscn" id="2_upyqb"]
 [ext_resource type="PackedScene" uid="uid://y5i2qg5ii8sl" path="res://Scenes/sand_obj_spawner.tscn" id="4_h137h"]
 [ext_resource type="PackedScene" uid="uid://dxcq5smkgc6ic" path="res://Scenes/ui.tscn" id="5_a3u2g"]
+[ext_resource type="PackedScene" uid="uid://0nu6ihjb2r5j" path="res://Scenes/day_spawn_info_manager.tscn" id="5_psqvo"]
+[ext_resource type="Script" path="res://Scripts/DayData.gd" id="6_sxa5o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vcand"]
 size = Vector2(127.203, 53.5814)
 
+[sub_resource type="Resource" id="Resource_l7p7g"]
+script = ExtResource("6_sxa5o")
+normalSpawnChance = 1.0
+strongSpawnChance = 0.0
+spawnDuration = 1.0
+builderSpawnChance = 0.0
+
+[sub_resource type="Resource" id="Resource_gkelq"]
+script = ExtResource("6_sxa5o")
+normalSpawnChance = 0.8
+strongSpawnChance = 0.2
+spawnDuration = 1.0
+builderSpawnChance = 0.0
+
+[sub_resource type="Resource" id="Resource_pwtw0"]
+script = ExtResource("6_sxa5o")
+normalSpawnChance = 0.7
+strongSpawnChance = 0.3
+spawnDuration = 1.0
+builderSpawnChance = 0.0
+
+[sub_resource type="Resource" id="Resource_uogjw"]
+script = ExtResource("6_sxa5o")
+normalSpawnChance = 0.7
+strongSpawnChance = 0.3
+spawnDuration = 0.8
+builderSpawnChance = 0.15
+
+[sub_resource type="Resource" id="Resource_ity5d"]
+script = ExtResource("6_sxa5o")
+normalSpawnChance = 0.6
+strongSpawnChance = 0.4
+spawnDuration = 0.6
+builderSpawnChance = 0.2
+
+[sub_resource type="Resource" id="Resource_ijjni"]
+script = ExtResource("6_sxa5o")
+normalSpawnChance = 0.5
+strongSpawnChance = 0.5
+spawnDuration = 0.5
+builderSpawnChance = 0.2
+
 [node name="World" type="Node2D"]
 
 [node name="beach" type="Sprite2D" parent="."]
-position = Vector2(577, 66.5)
-scale = Vector2(8.98438, 1.00781)
+position = Vector2(963, 66.5)
+scale = Vector2(15.0156, 1.00781)
 texture = ExtResource("1_11f64")
 
 [node name="Area2D" type="Area2D" parent="beach" groups=["Beach"]]
@@ -22,10 +66,13 @@ position = Vector2(-0.158241, -38.2016)
 shape = SubResource("RectangleShape2D_vcand")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(575, 328)
+position = Vector2(960, 540)
 
 [node name="WaveSpawner" parent="." instance=ExtResource("2_upyqb")]
 
 [node name="SandObjSpawner" parent="." instance=ExtResource("4_h137h")]
 
 [node name="UI" parent="." instance=ExtResource("5_a3u2g")]
+
+[node name="DaySpawnInfoManager" parent="." groups=["DaySpawnInfoManager"] instance=ExtResource("5_psqvo")]
+dayInfo = Array[ExtResource("6_sxa5o")]([SubResource("Resource_l7p7g"), SubResource("Resource_gkelq"), SubResource("Resource_pwtw0"), SubResource("Resource_uogjw"), SubResource("Resource_ity5d"), SubResource("Resource_ijjni")])

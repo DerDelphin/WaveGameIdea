@@ -2,7 +2,7 @@ extends Area2D
 
 @export var hp :int = 1
 @export var pointValue :int = 1
-@export_enum("Small", "Strong") var type = "Small"
+@export_enum("Small", "Strong","Builder") var type = "Small"
 
 var damagedSprite : CompressedTexture2D = preload("res://Sprites/strong_sand_obj_damaged.png")
 var destructionIndicator = preload("res://Scenes/destruction_point_indicator.tscn")
@@ -27,5 +27,12 @@ func TakeDamage(amount:int = 0) -> void:
 		$SandObject.texture = damagedSprite
 
 func addPoints(added: float) -> void:
+	
 	GLOBAL.points += added
 	GLOBAL.onPointsIncreased.emit()
+
+
+
+func _on_timer_timeout() -> void:
+	pointValue += 1
+	print("This B Castle is now worth: " + str(pointValue))

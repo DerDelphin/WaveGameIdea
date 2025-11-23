@@ -64,12 +64,13 @@ func onUpgradeButtonWasPressed(upgrade: String) -> void:
 		"WaveDelay-": UpgradeManager.WaveDelay -= .2; UpgradeManager.WaveDelayChanged.emit()
 		"WaveSize+": UpgradeManager.WaveSize += 1
 		
-	#disabnle the upgrade menu
+	#disable the upgrade menu
 	for child in UpgradeButtonsContainer.get_children():
 		child.visible = false
 	GLOBAL.isDayCycleRunning = true
 	GLOBAL.points = 0
 	GLOBAL.onPointsIncreased.emit()
+	GLOBAL.newDayStarted.emit()
 func displayUpgrades() -> void:
 	#var usedUpgrades: Array[String] = []
 	for child in UpgradeButtonsContainer.get_children():

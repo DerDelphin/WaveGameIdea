@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://gx2rmav1f33r"]
+
+[ext_resource type="Texture2D" uid="uid://dhx5mk340mf5u" path="res://Sprites/wave_mouseFollower.png" id="1_5wykc"]
+[ext_resource type="Script" path="res://Scripts/pre_wave.gd" id="2_p8bsq"]
+
+[node name="preWave" type="Sprite2D"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_5wykc")
+script = ExtResource("2_p8bsq")

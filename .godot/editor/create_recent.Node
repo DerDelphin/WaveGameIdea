@@ -1,6 +1,9 @@
+TextureRect
+Timer
+Sprite2D
+Area2D
 Label
 BoxContainer
-TextureRect
 HBoxContainer
 ColorRect
 WorldEnvironment
@@ -8,7 +11,4 @@ Button
 VBoxContainer
 Panel
 AnimationPlayer
-Timer
 Node2D
-ProgressBar
-TextureProgressBar
