@@ -9,8 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://bd80uew0lexeb" path="res://Scenes/audio_manager.tscn" id="5_puyxe"]
 [ext_resource type="Script" path="res://Scripts/DayData.gd" id="6_sxa5o"]
 [ext_resource type="Texture2D" uid="uid://prpbs8veklfh" path="res://external assets/beach_tileset.png" id="7_tb7bf"]
-[ext_resource type="AudioStream" uid="uid://cumix6ytnnhpv" path="res://ocean bg.wav" id="11_wnj5o"]
-[ext_resource type="AudioStream" uid="uid://dojjjgunsrlcs" path="res://beach.wav" id="12_yscop"]
+[ext_resource type="AudioStream" uid="uid://cumix6ytnnhpv" path="res://SFX/ocean bg.wav" id="11_wnj5o"]
+[ext_resource type="AudioStream" uid="uid://dojjjgunsrlcs" path="res://SFX/beach.wav" id="12_yscop"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vcand"]
 size = Vector2(127.203, 53.5814)

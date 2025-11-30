@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/wave.gd" id="1_s206c"]
 [ext_resource type="Texture2D" uid="uid://d0h760ntx7pgt" path="res://external assets/wave.png" id="2_w1jao"]
-[ext_resource type="AudioStream" uid="uid://dyn7u6a045bte" path="res://wave move.wav" id="3_a6ci1"]
+[ext_resource type="AudioStream" uid="uid://dyn7u6a045bte" path="res://SFX/wave move.wav" id="3_a6ci1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3rxug"]
 size = Vector2(98, 45)
