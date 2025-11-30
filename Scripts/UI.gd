@@ -1,14 +1,14 @@
 extends Control
 
-@onready var PointText : Label = $Points
-@onready var ClockText : Label = $Clock
-@onready var WaveCoolDownDisplay : ProgressBar = $ProgressBar
+@onready var PointText : Label = %Points
+@onready var ClockText : Label = %Clock
+@onready var WaveCoolDownDisplay : ProgressBar = %WaveCoolDownBar
 @onready var UpgradeButtonsContainer : BoxContainer = $UpgradeButtons
-@onready var RequiredPointsLabel : Label = $RequiredLabel
+@onready var RequiredPointsLabel : Label = %RequiredLabel
 @onready var GameLostPanel : Panel = $GameLostPanel
 @onready var VignetteObj : ColorRect = $VignetteShader
 
-
+var clickSound = preload("res://click(1).wav")
 
 #region ready and process
 # Called when the node enters the scene tree for the first time.
@@ -23,7 +23,7 @@ func _ready() -> void:
 	WaveCoolDownDisplay.max_value = UpgradeManager.WaveDelay
 	RequiredPointsLabel.text = str(GLOBAL.PointsNeededPerRound[0])
 	GLOBAL.onDayEnded.connect(displayRequiredPoints)
-	GLOBAL.onGameLost.connect(func(): GameLostPanel.visible = true)
+	GLOBAL.onGameLost.connect(onGameWasLost)
 	displayRequiredPoints()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -71,6 +71,7 @@ func onUpgradeButtonWasPressed(upgrade: String) -> void:
 	GLOBAL.points = 0
 	GLOBAL.onPointsIncreased.emit()
 	GLOBAL.newDayStarted.emit()
+	AudioManager.playAudio(clickSound,1)
 func displayUpgrades() -> void:
 	#var usedUpgrades: Array[String] = []
 	for child in UpgradeButtonsContainer.get_children():
@@ -95,3 +96,7 @@ func doVignetteEffect() -> void:
 
 func _on_quit_button_pressed() -> void:
 	get_tree().quit()
+	
+func onGameWasLost() -> void:
+	UpgradeButtonsContainer.visible = false
+	GameLostPanel.visible = true

@@ -39,3 +39,11 @@ func get_y_position() -> float:
 	return y_position
 
 func _on_timer_timeout() -> void: canSpawn = true
+
+
+func _on_audio_stream_player_finished() -> void:
+	$"../AudioStreamPlayer".play()
+
+
+func _on_bg_music_finished() -> void:
+	$"../Bg music".play()

@@ -2,16 +2,23 @@ extends Node2D
 
 @export var speed = 325
 @onready var timer:Timer = %KillTimer
+@onready var streamPlayer: AudioStreamPlayer = %WaveMoveSoundPlayer
 
+
+var moveSound = preload("res://wave move.wav")
+var impactSound = preload("res://wave impact1.wav")
 var combo = -1
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	timer.timeout.connect(_on_kill_timer_timeout)
 	scale.x = UpgradeManager.WaveSize
+	streamPlayer.stream = moveSound
+	streamPlayer.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	global_position += Vector2.UP * delta * speed * UpgradeManager.WaveBaseSpeed
+	
 
 func _on_kill_timer_timeout() -> void: queue_free()
 
@@ -21,6 +28,8 @@ func _on_area_entered(area: Area2D) -> void:
 		combo += 1
 	if(area.is_in_group("Beach")):
 		addComboPoints()
+		AudioManager.playAudio(impactSound,.04)
+		streamPlayer.stop()
 		queue_free()
 
 ##this function adds additional combo points, which are earned for destroying multiple Sandj with a single wave

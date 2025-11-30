@@ -1,7 +1,7 @@
 extends BoxContainer
 
-var filledSprite = preload("res://Sprites/sandObject.png")
-var indicatedSprite = preload("res://Sprites/sand_obj_indicated.png")
+var filledSprite = preload("res://external assets/sand_Obj_small.png")
+var indicatedSprite = preload("res://Sprites/sand_Obj_small_indicated.png")
 @onready var sandObjSpawner: SandObjSpawner
 
 func _ready() -> void:

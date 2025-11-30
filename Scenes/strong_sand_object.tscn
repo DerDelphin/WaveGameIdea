@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://fp04htwo0bhm"]
 
 [ext_resource type="Script" path="res://Scripts/sand_object.gd" id="1_npofh"]
-[ext_resource type="Texture2D" uid="uid://5810a0p0bj4e" path="res://Sprites/strong_sand_obj.png" id="2_4exvo"]
+[ext_resource type="Texture2D" uid="uid://qr0b8iaa57o" path="res://external assets/big castle 1.png" id="2_mk53q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_anv40"]
 size = Vector2(109, 79)
@@ -13,8 +13,8 @@ pointValue = 3
 type = "Strong"
 
 [node name="SandObject" type="Sprite2D" parent="."]
-scale = Vector2(0.17, 0.17)
-texture = ExtResource("2_4exvo")
+scale = Vector2(3.005, 3.005)
+texture = ExtResource("2_mk53q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)

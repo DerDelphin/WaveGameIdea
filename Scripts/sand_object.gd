@@ -4,8 +4,11 @@ extends Area2D
 @export var pointValue :int = 1
 @export_enum("Small", "Strong","Builder") var type = "Small"
 
-var damagedSprite : CompressedTexture2D = preload("res://Sprites/strong_sand_obj_damaged.png")
+var damagedSprite : CompressedTexture2D = preload("res://external assets/big castle_ destroyed.png")
 var destructionIndicator = preload("res://Scenes/destruction_point_indicator.tscn")
+#sounds
+var destroyedSound = preload("res://sand_1.wav")
+var damagedSound = preload("res://Scenes/wave impact.wav")
 
 func TakeDamage(amount:int = 0) -> void:
 	# default (no amount provided)
@@ -22,9 +25,11 @@ func TakeDamage(amount:int = 0) -> void:
 		add_sibling(instance)
 		var sandObjSpawner = get_tree().get_first_node_in_group("SandObjSpawner")
 		sandObjSpawner.spawnedNum -= 1
+		AudioManager.playAudio(destroyedSound,1)
 		queue_free()
-	if(type == "Strong"):
+	if(type == "Strong" and hp > 0):
 		$SandObject.texture = damagedSprite
+		AudioManager.playAudio(damagedSound,1)
 
 func addPoints(added: float) -> void:
 	

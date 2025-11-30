@@ -20,6 +20,7 @@ config/icon="res://Sprites/icon.svg"
 
 GLOBAL="*res://Scripts/GLOBAL.gd"
 UpgradeManager="*res://Scripts/UpgradeManager.gd"
+AudioManager="*res://Scripts/audio_manager.gd"
 
 [display]
 
