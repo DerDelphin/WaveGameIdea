@@ -1,6 +1,15 @@
-res://Scenes/world.tscn
+res://Scenes/sand_object.tscn
 res://Scripts/WaveType.gd
 res://Scripts/wave_spawner.gd
 res://VignetteShader.gdshader
+res://Scenes/world.tscn
 res://Scenes/wave.tscn
-res://Scenes/sand_object.tscn
+res://Scripts/overcrowd_meter.gd
+res://Scripts/sand_object.gd
+res://Scripts/UI.gd
+res://Scripts/wave.gd
+res://Scenes/builder_castle.tscn
+res://Scenes/sand_obj_spawner.tscn
+res://Scenes/day_spawn_info_manager.tscn
+res://Scenes/ui.tscn
+res://Scenes/overcrowd_meter.tscn

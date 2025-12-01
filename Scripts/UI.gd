@@ -8,7 +8,7 @@ extends Control
 @onready var GameLostPanel : Panel = $GameLostPanel
 @onready var VignetteObj : ColorRect = $VignetteShader
 
-var clickSound = preload("res://click(1).wav")
+var clickSound = preload("res://SFX/click.wav")
 
 #region ready and process
 # Called when the node enters the scene tree for the first time.

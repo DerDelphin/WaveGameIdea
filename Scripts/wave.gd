@@ -5,8 +5,8 @@ extends Node2D
 @onready var streamPlayer: AudioStreamPlayer = %WaveMoveSoundPlayer
 
 
-var moveSound = preload("res://wave move.wav")
-var impactSound = preload("res://wave impact1.wav")
+var moveSound = preload("res://SFX/wave move.wav")
+var impactSound = preload("res://SFX/wave impact2.wav")
 var combo = -1
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

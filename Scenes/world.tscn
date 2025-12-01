@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://0nu6ihjb2r5j" path="res://Scenes/day_spawn_info_manager.tscn" id="5_psqvo"]
 [ext_resource type="PackedScene" uid="uid://bd80uew0lexeb" path="res://Scenes/audio_manager.tscn" id="5_puyxe"]
 [ext_resource type="Script" path="res://Scripts/DayData.gd" id="6_sxa5o"]
-[ext_resource type="Texture2D" uid="uid://prpbs8veklfh" path="res://external assets/beach_tileset.png" id="7_tb7bf"]
+[ext_resource type="Texture2D" uid="uid://prpbs8veklfh" path="res://Sprites/beach_tileset.png" id="7_tb7bf"]
 [ext_resource type="AudioStream" uid="uid://cumix6ytnnhpv" path="res://SFX/ocean bg.wav" id="11_wnj5o"]
 [ext_resource type="AudioStream" uid="uid://dojjjgunsrlcs" path="res://SFX/beach.wav" id="12_yscop"]
 

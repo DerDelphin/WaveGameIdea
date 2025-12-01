@@ -1,65 +1,65 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1764533500
+::res://::1764572144
 Sta.Toasty_font (1).ttf::FontFile::2012062548192082131::1764347073::1764347078::1::::<><>::
-VignetteShader.gdshader::Shader::-1::1764533500::0::1::::<><>::
-::res://external assets/::1764533479
-beach_tileset.png::CompressedTexture2D::1088840614433647309::1764168982::1764168985::1::::<><>::
-big castle 1.png::CompressedTexture2D::34106981655023750::1764344266::1764344266::1::::<><>::
-big castle 2.png::CompressedTexture2D::8106080253528100421::1764344266::1764344266::1::::<><>::
-big castle_ destroyed.png::CompressedTexture2D::8624417943808603844::1764344870::1764344871::1::::<><>::
-preWave.png::CompressedTexture2D::2914441339394171004::1764513231::1764513231::1::::<><>::
-sand_Obj_small.png::CompressedTexture2D::3014544667348952572::1764345577::1764345577::1::::<><>::
-wave.png::CompressedTexture2D::8930433423749604907::1764513231::1764513231::1::::<><>::
-::res://Scenes/::1764533500
+VignetteShader.gdshader::Shader::-1::1764572132::0::1::::<><>::
+::res://Scenes/::1764572132
 audio_manager.tscn::PackedScene::2666665566418297301::1764454872::0::1::::<><>::res://Scripts/audio_manager.gd
 builder_castle.tscn::PackedScene::980238065147590400::1764529718::0::1::::<><>::res://Scripts/sand_object.gd<>uid://dbjcuxj5e6h1h::::res://Sprites/builderCastle.png
 day_spawn_info_manager.tscn::PackedScene::1782828132631736849::1764529719::0::1::::<><>::res://Scripts/DaySpawnInfoManager.gd
 destruction_point_indicator.tscn::PackedScene::7603565001261829650::1763836849::0::1::::<><>::res://Scripts/destruction_point_indicator.gd
 overcrowd_meter.tscn::PackedScene::6262144230151576035::1764529719::0::1::::<><>::res://Scripts/overcrowd_meter.gd<>uid://dbrbugvlolj4h::::res://Sprites/sand_Obj_small_indicated.png
-pre_wave.tscn::PackedScene::470284098741967137::1764513386::0::1::::<><>::uid://bhr1onb0dy6my::::res://external assets/preWave.png<>res://Scripts/pre_wave.gd
-sand_object.tscn::PackedScene::877114353128501962::1764531162::0::1::::<><>::res://Scripts/sand_object.gd<>uid://bi7jd0o5xgo0s::::res://external assets/sand_Obj_small.png
+pre_wave.tscn::PackedScene::470284098741967137::1764571824::0::1::::<><>::uid://bhr1onb0dy6my::::res://Sprites/preWave.png<>res://Scripts/pre_wave.gd
+sand_object.tscn::PackedScene::877114353128501962::1764572132::0::1::::<><>::res://Scripts/sand_object.gd<>uid://bi7jd0o5xgo0s::::res://Sprites/sand_Obj_small.png
 sand_obj_spawner.tscn::PackedScene::1746998383328669811::1764529718::0::1::::<><>::res://Scripts/sand_obj_spawner.gd
-strong_sand_object.tscn::PackedScene::383479995377469094::1764367530::0::1::::<><>::res://Scripts/sand_object.gd<>uid://qr0b8iaa57o::::res://external assets/big castle 1.png
+strong_sand_object.tscn::PackedScene::383479995377469094::1764571862::0::1::::<><>::res://Scripts/sand_object.gd<>uid://qr0b8iaa57o::::res://Sprites/old/big castle wrong outlineColor.png
 ui.tscn::PackedScene::8778760220384020414::1764529930::0::1::::<><>::res://Scripts/UI.gd<>res://VignetteShader.gdshader<>uid://3wwm15jhqa7d::::res://Sta.Toasty_font (1).ttf<>uid://cvhouoin1r6mh::::res://Scenes/overcrowd_meter.tscn<>uid://dt804yte41wm2::::res://Sprites/UI_panel_1.png<>uid://4lo6j8jiatcb::::res://Sprites/dotted line.png
-wave impact.wav::AudioStreamWAV::2290940422964478076::1764369713::1764369714::1::::<><>::
-wave.tscn::PackedScene::5208411519491332947::1764533500::0::1::::<><>::res://Scripts/wave.gd<>uid://d0h760ntx7pgt::::res://external assets/wave.png<>uid://dyn7u6a045bte::::res://SFX/wave move.wav
+wave.tscn::PackedScene::5208411519491332947::1764571824::0::1::::<><>::res://Scripts/wave.gd<>uid://d0h760ntx7pgt::::res://Sprites/wave.png<>uid://dyn7u6a045bte::::res://SFX/wave move.wav
 wave_spawner.tscn::PackedScene::7570482972274878260::1763836849::0::1::::<><>::res://Scripts/wave_spawner.gd
-world.tscn::PackedScene::4101185072835980785::1764533494::0::1::::<><>::uid://d21x7odtpplk8::::res://Sprites/icon.svg<>uid://df4g0piy0xhj5::::res://Scenes/wave_spawner.tscn<>uid://v23nplchkkd1::::res://Sprites/Water+.png<>uid://y5i2qg5ii8sl::::res://Scenes/sand_obj_spawner.tscn<>uid://dxcq5smkgc6ic::::res://Scenes/ui.tscn<>uid://0nu6ihjb2r5j::::res://Scenes/day_spawn_info_manager.tscn<>uid://bd80uew0lexeb::::res://Scenes/audio_manager.tscn<>res://Scripts/DayData.gd<>uid://prpbs8veklfh::::res://external assets/beach_tileset.png<>uid://cumix6ytnnhpv::::res://SFX/ocean bg.wav<>uid://dojjjgunsrlcs::::res://SFX/beach.wav
-::res://Scripts/::1764533494
+world.tscn::PackedScene::4101185072835980785::1764571824::0::1::::<><>::uid://d21x7odtpplk8::::res://Sprites/icon.svg<>uid://df4g0piy0xhj5::::res://Scenes/wave_spawner.tscn<>uid://v23nplchkkd1::::res://Sprites/Water+.png<>uid://y5i2qg5ii8sl::::res://Scenes/sand_obj_spawner.tscn<>uid://dxcq5smkgc6ic::::res://Scenes/ui.tscn<>uid://0nu6ihjb2r5j::::res://Scenes/day_spawn_info_manager.tscn<>uid://bd80uew0lexeb::::res://Scenes/audio_manager.tscn<>res://Scripts/DayData.gd<>uid://prpbs8veklfh::::res://Sprites/beach_tileset.png<>uid://cumix6ytnnhpv::::res://SFX/ocean bg.wav<>uid://dojjjgunsrlcs::::res://SFX/beach.wav
+::res://Scripts/::1764572132
 audio_manager.gd::GDScript::-1::1764370549::0::1::::<>Node<>::
 DayData.gd::GDScript::-1::1763845377::0::1::::DayDataSet<>Resource<>::
 DaySpawnInfoManager.gd::GDScript::-1::1763907593::0::1::::<>Node<>::
 destruction_point_indicator.gd::GDScript::-1::1763657628::0::1::::<>Node2D<>::
 GLOBAL.gd::GDScript::-1::1763911506::0::1::::<>Node<>::
-overcrowd_meter.gd::GDScript::-1::1764347527::0::1::::<>BoxContainer<>::
+overcrowd_meter.gd::GDScript::-1::1764571970::0::1::::<>BoxContainer<>::
 pre_wave.gd::GDScript::-1::1763762804::0::1::::<>Sprite2D<>::
-sand_object.gd::GDScript::-1::1764369843::0::1::::<>Area2D<>::
+sand_object.gd::GDScript::-1::1764572085::0::1::::<>Area2D<>::
 sand_obj_spawner.gd::GDScript::-1::1763907964::0::1::::SandObjSpawner<>Node2D<>::
 testRescource.gd::GDScript::-1::1763669453::0::1::::MyRescource<>Resource<>res://Sprites/testIco.png::
-UI.gd::GDScript::-1::1764529606::0::1::::<>Control<>::
+UI.gd::GDScript::-1::1764572117::0::1::::<>Control<>::
 UpgradeManager.gd::GDScript::-1::1763667604::0::1::::<>Node<>::
-wave.gd::GDScript::-1::1764529506::0::1::::<>Node2D<>::
-WaveType.gd::GDScript::-1::1764533494::0::1::::WaveType<>Resource<>::
-wave_spawner.gd::GDScript::-1::1764533494::0::1::::<>Node<>::
-::res://SFX/::1764533500
+wave.gd::GDScript::-1::1764572132::0::1::::<>Node2D<>::
+WaveType.gd::GDScript::-1::1764571824::0::1::::WaveType<>Resource<>::
+wave_spawner.gd::GDScript::-1::1764571824::0::1::::<>Node<>::
+::res://SFX/::1764572144
 beach.wav::AudioStreamWAV::8161048133529921482::1764528740::1764533495::1::::<><>::
-click(1).wav::AudioStreamWAV::3069645124448845684::1764368277::1764533495::1::::<><>::
+click.wav::AudioStreamWAV::3069645124448845684::1764368277::1764572110::1::::<><>::
 ocean bg.wav::AudioStreamWAV::6201919248577836871::1764522488::1764533496::1::::<><>::
-sand_1.wav::AudioStreamWAV::2134721927355464175::1764368142::1764533495::1::::<><>::
-wave impact1.wav::AudioStreamWAV::1685520426089658126::1764514487::1764533500::1::::<><>::
+sand_destroyed.wav::AudioStreamWAV::2134721927355464175::1764368142::1764572038::1::::<><>::
+wave impact2.wav::AudioStreamWAV::1685520426089658126::1764514487::1764572144::1::::<><>::
+wave impact.wav::AudioStreamWAV::2290940422964478076::1764369713::1764571732::1::::<><>::
 wave move.wav::AudioStreamWAV::8872611498241156974::1764370115::1764533500::1::::<><>::
-::res://Sprites/::1764355219
+::res://Sprites/::1764571892
+beach_tileset.png::CompressedTexture2D::1088840614433647309::1764168982::1764571825::1::::<><>::
+big castle.png::CompressedTexture2D::8106080253528100421::1764344266::1764571882::1::::<><>::
+big castle_destroyed.png::CompressedTexture2D::8624417943808603844::1764344870::1764571892::1::::<><>::
 builderCastle.png::CompressedTexture2D::7248188667677432911::1763837147::1763837151::1::::<><>::
 dotted line.png::CompressedTexture2D::2059090542415707505::1764346686::1764346693::1::::<><>::
 icon.svg::CompressedTexture2D::9109489027995553065::1763145133::1763223958::1::::<><>::
-sandObject.png::CompressedTexture2D::964449617857776673::1763145471::1763223963::1::::<><>::
-sand_obj_indicated.png::CompressedTexture2D::3348261599062933302::1763741803::1763741804::1::::<><>::
+preWave.png::CompressedTexture2D::2914441339394171004::1764513231::1764571825::1::::<><>::
+sand_Obj_small.png::CompressedTexture2D::3014544667348952572::1764345577::1764571825::1::::<><>::
 sand_Obj_small_indicated.png::CompressedTexture2D::7264642097507151837::1764347443::1764347450::1::::<><>::
-strong_sand_obj.png::CompressedTexture2D::2175413101019595450::1763155879::1763223963::1::::<><>::
-strong_sand_obj_damaged.png::CompressedTexture2D::1112434496573675836::1763242070::1763242072::1::::<><>::
-testIco.png::CompressedTexture2D::6941551943473397734::1763669399::1763669431::1::::<><>::
 UI.png::CompressedTexture2D::3154967047076574254::1764347622::1764347623::1::::<><>::
 UI_panel_1.png::CompressedTexture2D::8562545549061525227::1764347862::1764347862::1::::<><>::
 Water+.png::CompressedTexture2D::1531428011820249320::1764355210::1764355211::1::::<><>::
-wave.png::CompressedTexture2D::3918052764523641241::1763145235::1763223978::1::::<><>::
-wave_mouseFollower.png::CompressedTexture2D::7699908154038296628::1763762672::1763762676::1::::<><>::
+wave.png::CompressedTexture2D::8930433423749604907::1764513231::1764571825::1::::<><>::
+::res://Sprites/old/::1764571863
+big castle wrong outlineColor.png::CompressedTexture2D::34106981655023750::1764344266::1764571863::1::::<><>::
+sandObject.png::CompressedTexture2D::964449617857776673::1763145471::1764571756::1::::<><>::
+sand_obj_indicated.png::CompressedTexture2D::3348261599062933302::1763741803::1764571759::1::::<><>::
+strong_sand_obj.png::CompressedTexture2D::2175413101019595450::1763155879::1764571762::1::::<><>::
+strong_sand_obj_damaged.png::CompressedTexture2D::1112434496573675836::1763242070::1764571762::1::::<><>::
+testIco.png::CompressedTexture2D::6941551943473397734::1763669399::1764571765::1::::<><>::
+wave.png::CompressedTexture2D::3918052764523641241::1763145235::1764571772::1::::<><>::
+wave_mouseFollower.png::CompressedTexture2D::7699908154038296628::1763762672::1764571772::1::::<><>::

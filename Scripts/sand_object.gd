@@ -4,11 +4,11 @@ extends Area2D
 @export var pointValue :int = 1
 @export_enum("Small", "Strong","Builder") var type = "Small"
 
-var damagedSprite : CompressedTexture2D = preload("res://external assets/big castle_ destroyed.png")
+var damagedSprite : CompressedTexture2D = preload("res://Sprites/big castle_destroyed.png")
 var destructionIndicator = preload("res://Scenes/destruction_point_indicator.tscn")
 #sounds
-var destroyedSound = preload("res://sand_1.wav")
-var damagedSound = preload("res://Scenes/wave impact.wav")
+var destroyedSound = preload("res://SFX/sand_destroyed.wav")
+var damagedSound = preload("res://SFX/wave impact.wav")
 
 func TakeDamage(amount:int = 0) -> void:
 	# default (no amount provided)

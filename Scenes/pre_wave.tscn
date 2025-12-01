@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://gx2rmav1f33r"]
 
-[ext_resource type="Texture2D" uid="uid://bhr1onb0dy6my" path="res://external assets/preWave.png" id="1_tqdrg"]
+[ext_resource type="Texture2D" uid="uid://bhr1onb0dy6my" path="res://Sprites/preWave.png" id="1_tqdrg"]
 [ext_resource type="Script" path="res://Scripts/pre_wave.gd" id="2_p8bsq"]
 
 [node name="preWave" type="Sprite2D"]
