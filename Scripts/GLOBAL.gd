@@ -6,9 +6,9 @@ var isDayCycleRunning: bool = true
 ##the current dayTime
 var day_time: float = 0.0
 var dayCount: int = 1
-const DAY_DURATION := 120.0
-const PointsNeededPerRound = [100, 200, 300, 380, 500, 680, 760, 850]
-const ObjectsNeededForOvercrowding = [100, 60, 40, 30, 30, 30, 30, 30]
+const DAY_DURATION := 120
+const PointsNeededPerRound = [100, 150, 200, 250, 300, 400, 550, 800]
+const ObjectsNeededForOvercrowding = [100, 60, 40, 40, 40, 40, 40, 40]
 
 signal onPointsIncreased
 signal onDayEnded
@@ -33,9 +33,8 @@ func isPointGoalAchieved() -> bool:
 	
 func Chance(wahrscheinlichkeit: float) -> bool:
 	# Überprüfen, ob die Wahrscheinlichkeit im gültigen Bereich liegt
-	if wahrscheinlichkeit <= 0.0 or wahrscheinlichkeit > 1.0:
+	if wahrscheinlichkeit < 0.0 or wahrscheinlichkeit > 1.0:
 		push_error("The probability must be between 0 and 1 (inclusive) !")
 		return false  # Rückgabe von false im Fehlerfall   
 	# Rückgabe von true, wenn eine zufällige Zahl kleiner als die gegebene Wahrscheinlichkeit ist
 	return randf() < wahrscheinlichkeit
-

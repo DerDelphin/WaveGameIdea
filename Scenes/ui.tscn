@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=3 uid="uid://dxcq5smkgc6ic"]
 
-[ext_resource type="Script" path="res://Scripts/UI.gd" id="1_hydxo"]
-[ext_resource type="Shader" path="res://VignetteShader.gdshader" id="2_4l3w7"]
+[ext_resource type="Script" uid="uid://ba6qm7kdv00fa" path="res://Scripts/UI.gd" id="1_hydxo"]
+[ext_resource type="Shader" uid="uid://bgg5f71elnr2f" path="res://VignetteShader.gdshader" id="2_4l3w7"]
 [ext_resource type="FontFile" uid="uid://3wwm15jhqa7d" path="res://Sta.Toasty_font (1).ttf" id="3_1rgrd"]
 [ext_resource type="PackedScene" uid="uid://cvhouoin1r6mh" path="res://Scenes/overcrowd_meter.tscn" id="3_cm0ht"]
 [ext_resource type="Texture2D" uid="uid://dt804yte41wm2" path="res://Sprites/UI_panel_1.png" id="4_68308"]

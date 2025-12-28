@@ -1,0 +1,86 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1766935170
+export_presets.cfg::TextFile::-1::1766935170::0::1::::<><><>0<>0<><>::
+icon.png::CompressedTexture2D::4479601964285290913::1766934792::1766934792::1::::<><><>0<>0<>9b37ec27d19b31d4f4480c3b3e81b3ad<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+Sta.Toasty_font (1).ttf::FontFile::2012062548192082131::1764347073::1764347078::1::::<><><>0<>0<>1e7af24c8a9d1ada81bb14371990cb6e<>res://.godot/imported/Sta.Toasty_font (1).ttf-29eefee1ceda105822ed153995cb448e.fontdata::
+VignetteShader.gdshader::Shader::2821772171907264759::1766934948::0::1::::<><><>0<>0<><>::
+::res://Scenes/::1766939756
+audio_manager.tscn::PackedScene::2666665566418297301::1764454872::0::1::::<><><>0<>0<><>::res://Scripts/audio_manager.gd
+builder_castle.tscn::PackedScene::980238065147590400::1765576299::0::1::::<><><>0<>0<><>::uid://68n73ot7vydd::::res://Scripts/sand_object.gd<>uid://bp1n02d4rkyl1::::res://Sprites/BuilderCastle/builder_caslte_1.png<>uid://c1wb7ws6bpbkg::::res://Sprites/BuilderCastle/builder_caslte_2.png<>uid://cng2rb7n0gc6i::::res://Sprites/BuilderCastle/builder_caslte_3.png<>uid://dpui8y5cfry6e::::res://Sprites/BuilderCastle/builder_caslte_4.png<>uid://bfy6c0cq0p0c8::::res://Sprites/BuilderCastle/builder_caslte_5.png<>uid://c70ngg3vs33x2::::res://Sprites/BuilderCastle/builder_caslte_6.png
+day_spawn_info_manager.tscn::PackedScene::1782828132631736849::1764969620::0::1::::<><><>0<>0<><>::res://Scripts/DaySpawnInfoManager.gd
+destruction_point_indicator.tscn::PackedScene::7603565001261829650::1763836849::0::1::::<><><>0<>0<><>::res://Scripts/destruction_point_indicator.gd
+escape_menu.tscn::PackedScene::861570950597461232::1765572636::0::1::::<><><>0<>0<><>::uid://3wwm15jhqa7d::::res://Sta.Toasty_font (1).ttf<>uid://den0f82ul5fr1::::res://Scripts/escape_menu.gd
+overcrowd_meter.tscn::PackedScene::6262144230151576035::1764969620::0::1::::<><><>0<>0<><>::res://Scripts/overcrowd_meter.gd<>uid://dbrbugvlolj4h::::res://Sprites/sand_Obj_small_indicated.png
+pre_wave.tscn::PackedScene::470284098741967137::1764571824::0::1::::<><><>0<>0<><>::uid://bhr1onb0dy6my::::res://Sprites/preWave.png<>res://Scripts/pre_wave.gd
+sand_object.tscn::PackedScene::877114353128501962::1765039505::0::1::::<><><>0<>0<><>::uid://68n73ot7vydd::::res://Scripts/sand_object.gd<>uid://bi7jd0o5xgo0s::::res://Sprites/sand_Obj_small.png
+sand_obj_spawner.tscn::PackedScene::1746998383328669811::1764969620::0::1::::<><><>0<>0<><>::res://Scripts/sand_obj_spawner.gd
+strong_sand_object.tscn::PackedScene::383479995377469094::1764571862::0::1::::<><><>0<>0<><>::res://Scripts/sand_object.gd<>uid://qr0b8iaa57o::::res://Sprites/old/big castle wrong outlineColor.png
+ui.tscn::PackedScene::8778760220384020414::1766936846::0::1::::<><><>0<>0<><>::uid://ba6qm7kdv00fa::::res://Scripts/UI.gd<>uid://bgg5f71elnr2f::::res://VignetteShader.gdshader<>uid://3wwm15jhqa7d::::res://Sta.Toasty_font (1).ttf<>uid://cvhouoin1r6mh::::res://Scenes/overcrowd_meter.tscn<>uid://dt804yte41wm2::::res://Sprites/UI_panel_1.png<>uid://4lo6j8jiatcb::::res://Sprites/dotted line.png
+wave.tscn::PackedScene::5208411519491332947::1766934403::0::1::::<><><>0<>0<><>::uid://dicd2iewrypfk::::res://Scripts/wave.gd<>uid://d0h760ntx7pgt::::res://Sprites/Wave/wave.png<>uid://dyn7u6a045bte::::res://SFX/wave move.wav
+wave_spawner.tscn::PackedScene::7570482972274878260::1763836849::0::1::::<><><>0<>0<><>::res://Scripts/wave_spawner.gd
+world.tscn::PackedScene::4101185072835980785::1766939756::0::1::::<><><>0<>0<><>::uid://d21x7odtpplk8::::res://Sprites/old/icon.svg<>uid://df4g0piy0xhj5::::res://Scenes/wave_spawner.tscn<>uid://v23nplchkkd1::::res://Sprites/Water+.png<>uid://y5i2qg5ii8sl::::res://Scenes/sand_obj_spawner.tscn<>uid://dxcq5smkgc6ic::::res://Scenes/ui.tscn<>uid://0nu6ihjb2r5j::::res://Scenes/day_spawn_info_manager.tscn<>uid://bd80uew0lexeb::::res://Scenes/audio_manager.tscn<>uid://cedc0rje0w8fa::::res://Scripts/DayData.gd<>uid://prpbs8veklfh::::res://Sprites/beach_tileset.png<>uid://mjl7hrt5qy5u::::res://Scenes/escape_menu.tscn<>uid://n73m3v3x8nl5::::res://Scenes/builder_castle.tscn<>uid://cumix6ytnnhpv::::res://SFX/ocean bg.wav<>uid://dojjjgunsrlcs::::res://SFX/beach.wav<>uid://bd185e0v5yv53::::res://Scripts/musicManager.gd
+::res://Scripts/::1766939751
+audio_manager.gd::GDScript::586295624387659208::1765040499::0::1::::<>Node<><>0<>0<><>::
+DayData.gd::GDScript::5059956861049911598::1763845377::0::1::::DayDataSet<>Resource<><>0<>0<><>::
+DaySpawnInfoManager.gd::GDScript::48187616351968304::1763907593::0::1::::<>Node<><>0<>0<><>::
+destruction_point_indicator.gd::GDScript::4454888700922873246::1763657628::0::1::::<>Node2D<><>0<>0<><>::
+escape_menu.gd::GDScript::7468382966127763536::1765572872::0::1::::<>Control<><>0<>0<><>::
+GLOBAL.gd::GDScript::8348279540399474732::1766939751::0::1::::<>Node<><>0<>0<><>::
+overcrowd_meter.gd::GDScript::2134313491817758124::1764571970::0::1::::<>BoxContainer<><>0<>0<><>::
+pre_wave.gd::GDScript::1461623728994478578::1763762804::0::1::::<>Sprite2D<><>0<>0<><>::
+musicManager.gd::GDScript::2652718520499906156::1766939677::0::1::::<>AudioStreamPlayer<><>0<>0<><>::
+sand_object.gd::GDScript::2244826578161852113::1765576299::0::1::::<>Area2D<><>0<>0<><>::
+sand_obj_spawner.gd::GDScript::8948449485256631998::1765036452::0::1::::SandObjSpawner<>Node2D<><>0<>0<><>::
+UI.gd::GDScript::2451410991840706054::1766937174::0::1::::<>Control<><>0<>0<><>::
+UpgradeManager.gd::GDScript::1868915332628581053::1763667604::0::1::::<>Node<><>0<>0<><>::
+wave.gd::GDScript::7725132350494690048::1766934269::0::1::::<>Node2D<><>0<>0<><>::
+WaveType.gd::GDScript::9167845479042370462::1765036452::0::1::::WaveType<>Resource<><>0<>0<><>::
+wave_spawner.gd::GDScript::158227706430150568::1766939563::0::1::::<>Node<><>0<>0<><>::
+::res://SFX/::1766940057
+beach calm2.wav::AudioStreamWAV::2654652384074166372::1766855569::1766855569::1::::<><><>0<>0<>6fc6c2601c545c9a07960269b6b60a92<>res://.godot/imported/beach calm2.wav-9234513658422ffcff4133b7e44949d7.sample::
+beach calm.wav::AudioStreamWAV::4104755540658300146::1766854833::1766854839::1::::<><><>0<>0<>d59265ce0d23503d2ef66c641d7ff87c<>res://.godot/imported/beach calm.wav-b2dd05068ac876fa2b24ec69a038ddce.sample::
+beach.wav::AudioStreamWAV::8161048133529921482::1764528740::1764533495::1::::<><><>0<>0<>8d759c836a8253f5a47edddb0c601df7<>res://.godot/imported/beach.wav-1a7c12d45b79ab54d454874179cf2c7b.sample::
+beach_day_ended.wav::AudioStreamWAV::7494548654958009946::1766936752::1766936752::1::::<><><>0<>0<>c7dd084fe0216fa1afab1b7ad4c84a4f<>res://.godot/imported/beach_day_ended.wav-b9d33936987b57d02a1ab5ce4ef2e0a6.sample::
+click.wav::AudioStreamWAV::3069645124448845684::1764368277::1764572110::1::::<><><>0<>0<>bba1eae8323fd2822df499b31c03e762<>res://.godot/imported/click.wav-f799785ae70d0d1b7dc7b6ab9b14a2e2.sample::
+heartbeat.mp3::AudioStreamMP3::5550492377869128931::1765039437::1765039442::1::::<><><>0<>0<>e26b32de108a74f360cbc987c4e36dd3<>res://.godot/imported/heartbeat.mp3-bdbcb1bcb2e3961a5fd116d4bda4274e.mp3str::
+loose.wav::AudioStreamWAV::3449152891782898976::1766938978::1766938979::1::::<><><>0<>0<>370764b757022b1e19f6943c7cdf509e<>res://.godot/imported/loose.wav-11f95698cfa7d476c550c0df0d110f0a.sample::
+ocean bg.wav::AudioStreamWAV::6201919248577836871::1764522488::1764533496::1::::<><><>0<>0<>787689a912fe47270d2192ad26d02837<>res://.godot/imported/ocean bg.wav-de1e8bdf2d46e40d72c15d41c5897397.sample::
+sand_destroyed.wav::AudioStreamWAV::2134721927355464175::1764368142::1764572038::1::::<><><>0<>0<>3c9efc5c585c554d0755dde6740fd4eb<>res://.godot/imported/sand_destroyed.wav-4bc857e68f15e5e43435878a7d6e5d1f.sample::
+succes.wav::AudioStreamWAV::5298299195076236222::1766940057::1766940057::1::::<><><>0<>0<>ebf934741618c9af77679122e8c10204<>res://.godot/imported/succes.wav-533cd7c9bd80846794cdc5e84da70be8.sample::
+wave impact2.wav::AudioStreamWAV::1685520426089658126::1764514487::1764572144::1::::<><><>0<>0<>df116c301b8b66098de30fabb6fe75de<>res://.godot/imported/wave impact2.wav-b331e533ee512f18a99d1ce73c3c5dda.sample::
+wave impact.wav::AudioStreamWAV::2290940422964478076::1764369713::1764571732::1::::<><><>0<>0<>276e29e7db5aacd924f32e4b23c0ed16<>res://.godot/imported/wave impact.wav-94ff44c018c7f3b0075003a02eceea3a.sample::
+wave move.wav::AudioStreamWAV::8872611498241156974::1764370115::1764533500::1::::<><><>0<>0<>95ef93d1b8a59d1bc5e653403bae91a2<>res://.godot/imported/wave move.wav-383b0fbe6d97004a7fb98dea4e68b880.sample::
+::res://Sprites/::1766932965
+beach_tileset.png::CompressedTexture2D::1088840614433647309::1764168982::1764571825::1::::<><><>0<>0<>9f5289628a15220a0aa118a57324dbc0<>res://.godot/imported/beach_tileset.png-629d39c3538b9aa30e96e2c25d9df81c.ctex::
+dotted line.png::CompressedTexture2D::2059090542415707505::1764346686::1764346693::1::::<><><>0<>0<>5a8ba12ed807e48fba798967aee755b7<>res://.godot/imported/dotted line.png-35454164c0123f0ff5a8a615a7cc8d14.ctex::
+preWave.png::CompressedTexture2D::2914441339394171004::1764513231::1764571825::1::::<><><>0<>0<>9b165b93c647d764889283b3fd62da03<>res://.godot/imported/preWave.png-db90249107a64b72cfe3d14edc382392.ctex::
+sand_Obj_small.png::CompressedTexture2D::3014544667348952572::1764345577::1764571825::1::::<><><>0<>0<>c50e11d57ea9ffcf959a50059ca34173<>res://.godot/imported/sand_Obj_small.png-dd52136b7ecec4ee15103779f96a398b.ctex::
+sand_Obj_small_indicated.png::CompressedTexture2D::7264642097507151837::1764347443::1764347450::1::::<><><>0<>0<>c3281819872d2becfdb0aae3c3072342<>res://.godot/imported/sand_Obj_small_indicated.png-189c9fe9d929e3e75c60dcb48e1457b0.ctex::
+UI.png::CompressedTexture2D::3154967047076574254::1764347622::1764347623::1::::<><><>0<>0<>2f37d25a21dd2f407b7d2d338df24cdb<>res://.godot/imported/UI.png-0fa71ced25bc6f027cc7cfd18b10f10d.ctex::
+UI_panel_1.png::CompressedTexture2D::8562545549061525227::1764347862::1764347862::1::::<><><>0<>0<>05903d471a769e341f2b36768ed4ef3a<>res://.godot/imported/UI_panel_1.png-f55335f0268feda7f1848e6b1df3b59e.ctex::
+Water+.png::CompressedTexture2D::1531428011820249320::1764355210::1764355211::1::::<><><>0<>0<>65b25fc6667e9dbe8d0986574796dca1<>res://.godot/imported/Water+.png-66d3caff5c050aedf2776137ee5628be.ctex::
+::res://Sprites/BigCastle/::1765575717
+big castle.png::CompressedTexture2D::8106080253528100421::1764344266::1765575717::1::::<><><>0<>0<>8c6c4e1cdc1da73a4e46103039fad991<>res://.godot/imported/big castle.png-f8d42d3aebe19b02258f157650106487.ctex::
+big castle_destroyed.png::CompressedTexture2D::8624417943808603844::1764344870::1765575717::1::::<><><>0<>0<>bf659a0d85ff409f0e54c4e41b449346<>res://.godot/imported/big castle_destroyed.png-0e9849bad5185ebc213245a97c9ae327.ctex::
+::res://Sprites/BuilderCastle/::1765575676
+builder_caslte_1.png::CompressedTexture2D::3493762549728360752::1765575661::1765575676::1::::<><><>0<>0<>594931cef88041a83b22b9d3b13980ce<>res://.godot/imported/builder_caslte_1.png-033185843cdf0675060122eb350afc8f.ctex::
+builder_caslte_2.png::CompressedTexture2D::6643286659692690502::1765575661::1765575676::1::::<><><>0<>0<>09f567d189c1d95988e12934e7c8e662<>res://.godot/imported/builder_caslte_2.png-6ddf7c4e68edabc456f9f3da94744f51.ctex::
+builder_caslte_3.png::CompressedTexture2D::5699352421087459086::1765575661::1765575676::1::::<><><>0<>0<>25327fddd3b26e2688b2e58b44cce570<>res://.godot/imported/builder_caslte_3.png-35465c797773fd094bb60cbe9e8085a7.ctex::
+builder_caslte_4.png::CompressedTexture2D::8253928234874763162::1765575661::1765575676::1::::<><><>0<>0<>da6d368f005d1bb4041270b34183fc48<>res://.godot/imported/builder_caslte_4.png-5b8a3643fa42fe546d79e1786e1c3429.ctex::
+builder_caslte_5.png::CompressedTexture2D::2788797083278623953::1765575661::1765575676::1::::<><><>0<>0<>e6126fdc63b2d7196b0695c4d4dd0212<>res://.godot/imported/builder_caslte_5.png-d2fa5880df0dc0b9e1b320d5a5dedb06.ctex::
+builder_caslte_6.png::CompressedTexture2D::7071294202698082361::1765575661::1765575676::1::::<><><>0<>0<>82e53e6a2680499fe1423527789bcf8f<>res://.godot/imported/builder_caslte_6.png-4099daa61e78fa9c05a8dff26017aa7f.ctex::
+::res://Sprites/old/::1765575686
+big castle wrong outlineColor.png::CompressedTexture2D::34106981655023750::1764344266::1764571863::1::::<><><>0<>0<>dde936f0d000cf245b35dc5274d921d8<>res://.godot/imported/big castle wrong outlineColor.png-6d669d1e03d6337b37c69e7774704a92.ctex::
+builderCastle.png::CompressedTexture2D::7248188667677432911::1763837147::1765575682::1::::<><><>0<>0<>355e5f9b2eae3a9abd32767d0663daaf<>res://.godot/imported/builderCastle.png-125057c56b9cda7667ed9a780e390460.ctex::
+icon.svg::CompressedTexture2D::9109489027995553065::1763145133::1765575686::1::::<><><>0<>0<>469d8b291d5ff9a7b0157d6c17da4730<>res://.godot/imported/icon.svg-ece43fdd32fa08ebcda49488d00635a2.ctex::
+sandObject.png::CompressedTexture2D::964449617857776673::1763145471::1764571756::1::::<><><>0<>0<>184bccbe8fd150232bb8048f09c58778<>res://.godot/imported/sandObject.png-9f7ee7cc4ba2306c27b6d91361997a88.ctex::
+sand_obj_indicated.png::CompressedTexture2D::3348261599062933302::1763741803::1764571759::1::::<><><>0<>0<>310df1d9fadb366e4c7f5c872a0266bc<>res://.godot/imported/sand_obj_indicated.png-15e434ccf20fe829357ce73298b239a6.ctex::
+strong_sand_obj.png::CompressedTexture2D::2175413101019595450::1763155879::1764571762::1::::<><><>0<>0<>5f52c789954c73d19031e7dc86d3671f<>res://.godot/imported/strong_sand_obj.png-7197ea16247ddf0bbc2d7b6c784629d5.ctex::
+strong_sand_obj_damaged.png::CompressedTexture2D::1112434496573675836::1763242070::1764571762::1::::<><><>0<>0<>a21e446ff89d64860680564f48df4d48<>res://.godot/imported/strong_sand_obj_damaged.png-1fc7a986a4178dd8aacd07fa2bee18a0.ctex::
+testIco.png::CompressedTexture2D::6941551943473397734::1763669399::1764571765::1::::<><><>0<>0<>ac29bbd1432181a049d84670e2880d9b<>res://.godot/imported/testIco.png-8f6c276bc19674777b6c5185553729b0.ctex::
+wave.png::CompressedTexture2D::3918052764523641241::1763145235::1764571772::1::::<><><>0<>0<>b665aba2b8a3952689daa0b3a8a3fe1b<>res://.godot/imported/wave.png-28e684ca6267e85b39723c3aa464c5ea.ctex::
+wave_mouseFollower.png::CompressedTexture2D::7699908154038296628::1763762672::1764571772::1::::<><><>0<>0<>8414a4450834e12294ddbc0f542cd04c<>res://.godot/imported/wave_mouseFollower.png-db825314cc7e41ed8fd92957203e3da5.ctex::
+::res://Sprites/Wave/::1766933511
+wave.png::CompressedTexture2D::8930433423749604907::1766933510::1766933511::1::::<><><>0<>0<>e606fb45bb18de9fb3d60c47f367dd21<>res://.godot/imported/wave.png-faefbce86906220ee7a79c40ee2ee778.ctex::
+wave_extraLarge.png::CompressedTexture2D::5500999298155683832::1766933452::1766933452::1::::<><><>0<>0<>9fb525d28cdf7f2f59e1f34e33393be9<>res://.godot/imported/wave_extraLarge.png-edd119855b21f79ab903083a42fb8b3c.ctex::
+Wave_large.png::CompressedTexture2D::2474451649090610018::1766932936::1766932966::1::::<><><>0<>0<>c04f0484fcadc18f6deefdd1e3f4f6fb<>res://.godot/imported/Wave_large.png-8a5308ce9e794dc4ae25593859ae098b.ctex::

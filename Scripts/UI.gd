@@ -9,6 +9,9 @@ extends Control
 @onready var VignetteObj : ColorRect = $VignetteShader
 
 var clickSound = preload("res://SFX/click.wav")
+var heartBeatSound = preload("res://SFX/heartbeat.mp3")
+var normalBGMusic = preload("res://SFX/beach.wav")
+var calmMusic = preload("res://SFX/beach calm2.wav")
 
 #region ready and process
 # Called when the node enters the scene tree for the first time.
@@ -52,6 +55,7 @@ func get_game_time_string() -> String:
 	return "%02d:%02d" % [hours, minutes]
 
 func EnableUpgradeMenu() -> void:
+	get_tree().get_first_node_in_group("BGM").playUpgradeMenuMusic()
 	for child in UpgradeButtonsContainer.get_children():
 		child.visible = true
 	displayUpgrades()
@@ -72,6 +76,8 @@ func onUpgradeButtonWasPressed(upgrade: String) -> void:
 	GLOBAL.onPointsIncreased.emit()
 	GLOBAL.newDayStarted.emit()
 	AudioManager.playAudio(clickSound,1)
+	get_tree().get_first_node_in_group("BGM").stream = normalBGMusic
+	get_tree().get_first_node_in_group("BGM").play()
 func displayUpgrades() -> void:
 	#var usedUpgrades: Array[String] = []
 	for child in UpgradeButtonsContainer.get_children():
@@ -92,6 +98,7 @@ func displayRequiredPoints() -> void:
 func doVignetteEffect() -> void:
 	if (GLOBAL.day_time/ GLOBAL.DAY_DURATION) > .8 and !GLOBAL.isPointGoalAchieved():
 		VignetteObj.visible = true
+		AudioManager.playAudioWithRefId("H-Beat", heartBeatSound, 1.6)
 	else: VignetteObj.visible = false
 
 func _on_quit_button_pressed() -> void:

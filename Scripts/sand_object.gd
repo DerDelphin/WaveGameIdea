@@ -4,11 +4,14 @@ extends Area2D
 @export var pointValue :int = 1
 @export_enum("Small", "Strong","Builder") var type = "Small"
 
-var damagedSprite : CompressedTexture2D = preload("res://Sprites/big castle_destroyed.png")
+var damagedSprite : CompressedTexture2D = preload("res://Sprites/BigCastle/big castle_destroyed.png")
 var destructionIndicator = preload("res://Scenes/destruction_point_indicator.tscn")
+@export var builderCaslteSprites: Array[CompressedTexture2D]
+
 #sounds
 var destroyedSound = preload("res://SFX/sand_destroyed.wav")
 var damagedSound = preload("res://SFX/wave impact.wav")
+
 
 func TakeDamage(amount:int = 0) -> void:
 	# default (no amount provided)
@@ -31,13 +34,15 @@ func TakeDamage(amount:int = 0) -> void:
 		$SandObject.texture = damagedSprite
 		AudioManager.playAudio(damagedSound,1)
 
-func addPoints(added: float) -> void:
+func addPoints(added: int) -> void:
 	
 	GLOBAL.points += added
 	GLOBAL.onPointsIncreased.emit()
 
 
-
 func _on_timer_timeout() -> void:
 	pointValue += 1
-	print("This B Castle is now worth: " + str(pointValue))
+	if pointValue > 5:
+		$Sprite2D.texture = builderCaslteSprites[5]
+	else:
+		$Sprite2D.texture = builderCaslteSprites[pointValue-1]
