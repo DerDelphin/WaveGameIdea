@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8tupxwr7fcdo"]
+
+[ext_resource type="Shader" uid="uid://bgg5f71elnr2f" path="res://VignetteShader.gdshader" id="1_x7oxg"]
+[ext_resource type="Script" uid="uid://bvtcdk8sasuyj" path="res://Scripts/UI/vignette.gd" id="2_sk8vk"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_erk65"]
+shader = ExtResource("1_x7oxg")
+shader_parameter/alpha = 1.0
+shader_parameter/inner_radius = 0.3
+shader_parameter/outer_radius = 2.7
+
+[node name="Vignette" type="ColorRect"]
+material = SubResource("ShaderMaterial_erk65")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_sk8vk")

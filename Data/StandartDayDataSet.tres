@@ -1,0 +1,62 @@
+[gd_resource type="Resource" script_class="DayDataSet" load_steps=11 format=3 uid="uid://du6y5otbh8e5c"]
+
+[ext_resource type="Script" uid="uid://cedc0rje0w8fa" path="res://Scripts/DayData.gd" id="1_bog5r"]
+[ext_resource type="Script" uid="uid://b2uldfe20vjd" path="res://Scripts/DayDataSet.gd" id="2_thlgf"]
+
+[sub_resource type="Resource" id="Resource_bog5r"]
+script = ExtResource("1_bog5r")
+PointsNeeded = 100
+ObjectsNeededForOvercrowding = 100
+metadata/_custom_type_script = "uid://cedc0rje0w8fa"
+
+[sub_resource type="Resource" id="Resource_thlgf"]
+script = ExtResource("1_bog5r")
+normalSpawnChance = 0.7
+strongSpawnChance = 0.3
+PointsNeeded = 150
+ObjectsNeededForOvercrowding = 60
+metadata/_custom_type_script = "uid://cedc0rje0w8fa"
+
+[sub_resource type="Resource" id="Resource_iwnyo"]
+script = ExtResource("1_bog5r")
+normalSpawnChance = 0.7
+strongSpawnChance = 0.2
+builderSpawnChance = 0.2
+PointsNeeded = 200
+ObjectsNeededForOvercrowding = 50
+metadata/_custom_type_script = "uid://cedc0rje0w8fa"
+
+[sub_resource type="Resource" id="Resource_grarg"]
+script = ExtResource("1_bog5r")
+PointsNeeded = 250
+ObjectsNeededForOvercrowding = 50
+metadata/_custom_type_script = "uid://cedc0rje0w8fa"
+
+[sub_resource type="Resource" id="Resource_1u1gl"]
+script = ExtResource("1_bog5r")
+PointsNeeded = 300
+ObjectsNeededForOvercrowding = 50
+metadata/_custom_type_script = "uid://cedc0rje0w8fa"
+
+[sub_resource type="Resource" id="Resource_7sa8u"]
+script = ExtResource("1_bog5r")
+PointsNeeded = 400
+ObjectsNeededForOvercrowding = 50
+metadata/_custom_type_script = "uid://cedc0rje0w8fa"
+
+[sub_resource type="Resource" id="Resource_wa8hc"]
+script = ExtResource("1_bog5r")
+PointsNeeded = 550
+ObjectsNeededForOvercrowding = 50
+metadata/_custom_type_script = "uid://cedc0rje0w8fa"
+
+[sub_resource type="Resource" id="Resource_w2myy"]
+script = ExtResource("1_bog5r")
+PointsNeeded = 800
+ObjectsNeededForOvercrowding = 50
+metadata/_custom_type_script = "uid://cedc0rje0w8fa"
+
+[resource]
+script = ExtResource("2_thlgf")
+days = Array[ExtResource("1_bog5r")]([SubResource("Resource_bog5r"), SubResource("Resource_thlgf"), SubResource("Resource_iwnyo"), SubResource("Resource_grarg"), SubResource("Resource_1u1gl"), SubResource("Resource_7sa8u"), SubResource("Resource_wa8hc"), SubResource("Resource_w2myy")])
+metadata/_custom_type_script = "uid://b2uldfe20vjd"

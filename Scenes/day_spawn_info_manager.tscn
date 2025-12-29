@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://0nu6ihjb2r5j"]
 
-[ext_resource type="Script" path="res://Scripts/DaySpawnInfoManager.gd" id="1_70ycq"]
+[ext_resource type="Script" uid="uid://xlv4krn5gqy" path="res://Scripts/Management/DaySpawnInfoManager.gd" id="1_70ycq"]
 
-[node name="DaySpawnInfoManager" type="Node2D"]
+[node name="DaySpawnInfoManager" type="Node"]
 script = ExtResource("1_70ycq")

@@ -1,0 +1,87 @@
+[gd_scene load_steps=8 format=3 uid="uid://dxcq5smkgc6ic"]
+
+[ext_resource type="PackedScene" uid="uid://ui8tojsus8tx" path="res://Scenes/UI/clock.tscn" id="2_duuxe"]
+[ext_resource type="PackedScene" uid="uid://cv4l4ahc18chw" path="res://Scenes/UI/PointLabel.tscn" id="3_jfwrg"]
+[ext_resource type="PackedScene" uid="uid://k1lpj2cve4i2" path="res://Scenes/UI/upgrade_buttons.tscn" id="4_mbl0m"]
+[ext_resource type="PackedScene" uid="uid://4575efr67nyj" path="res://Scenes/UI/wave_cool_down_bar.tscn" id="6_mbl0m"]
+[ext_resource type="PackedScene" uid="uid://cak5d5xml8lis" path="res://Scenes/UI/game_lost_panel.tscn" id="7_duuxe"]
+[ext_resource type="PackedScene" uid="uid://ctpn58msb8pi4" path="res://Scenes/UI/Overcrowd_meter.tscn" id="7_mbl0m"]
+[ext_resource type="PackedScene" uid="uid://b8tupxwr7fcdo" path="res://Scenes/UI/vignette.tscn" id="8_mbl0m"]
+
+[node name="HUD" type="Control" groups=["UI"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="Upper" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 34.0
+grow_horizontal = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Upper"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 50
+
+[node name="Clock" parent="Upper/MarginContainer" instance=ExtResource("2_duuxe")]
+layout_mode = 2
+
+[node name="PointLabel" parent="Upper/MarginContainer" instance=ExtResource("3_jfwrg")]
+layout_mode = 2
+
+[node name="UpgradeButtons" parent="." instance=ExtResource("4_mbl0m")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -345.5
+offset_top = -55.0
+offset_right = 345.5
+offset_bottom = 55.0
+
+[node name="Lower" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -137.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Lower"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="WaveCoolDownBar" parent="Lower/MarginContainer" instance=ExtResource("6_mbl0m")]
+layout_mode = 2
+
+[node name="OvercrowdMeter" parent="Lower/MarginContainer" instance=ExtResource("7_mbl0m")]
+layout_mode = 2
+
+[node name="GameLostPanel" parent="." instance=ExtResource("7_duuxe")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+metadata/_edit_use_anchors_ = true
+
+[node name="Vignette" parent="." instance=ExtResource("8_mbl0m")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1

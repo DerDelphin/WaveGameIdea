@@ -1,7 +1,3 @@
-res://Scenes/ui.tscn
-res://VignetteShader.gdshader
-res://Scripts/GLOBAL.gd
 res://Scenes/world.tscn
-res://Scripts/musicManager.gd
-res://Scripts/UI.gd
-res://Scripts/wave_spawner.gd
+res://Data/StandartDayDataSet.tres
+res://VignetteShader.gdshader

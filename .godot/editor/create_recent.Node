@@ -1,8 +1,9 @@
+Node
+MarginContainer
+HBoxContainer
 Label
 VBoxContainer
 Button
-HBoxContainer
-MarginContainer
 GridContainer
 Panel
 GraphNode
@@ -11,4 +12,3 @@ ColorRect
 AudioStreamPlayer
 CollisionShape2D
 Area2D
-NinePatchRect

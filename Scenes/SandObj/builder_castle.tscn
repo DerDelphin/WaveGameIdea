@@ -1,0 +1,32 @@
+[gd_scene load_steps=9 format=3 uid="uid://n73m3v3x8nl5"]
+
+[ext_resource type="Script" uid="uid://68n73ot7vydd" path="res://Scripts/SandObj/sand_object.gd" id="1_e463x"]
+[ext_resource type="Texture2D" uid="uid://bp1n02d4rkyl1" path="res://Sprites/BuilderCastle/builder_caslte_1.png" id="2_bmt6w"]
+[ext_resource type="Texture2D" uid="uid://c1wb7ws6bpbkg" path="res://Sprites/BuilderCastle/builder_caslte_2.png" id="3_2k5ee"]
+[ext_resource type="Texture2D" uid="uid://cng2rb7n0gc6i" path="res://Sprites/BuilderCastle/builder_caslte_3.png" id="4_em003"]
+[ext_resource type="Texture2D" uid="uid://dpui8y5cfry6e" path="res://Sprites/BuilderCastle/builder_caslte_4.png" id="5_7vpyw"]
+[ext_resource type="Texture2D" uid="uid://bfy6c0cq0p0c8" path="res://Sprites/BuilderCastle/builder_caslte_5.png" id="6_6tutk"]
+[ext_resource type="Texture2D" uid="uid://c70ngg3vs33x2" path="res://Sprites/BuilderCastle/builder_caslte_6.png" id="7_ub465"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fvheb"]
+size = Vector2(70, 73)
+
+[node name="BuilderCastle" type="Area2D" groups=["SandObj"]]
+script = ExtResource("1_e463x")
+type = "Builder"
+builderCaslteSprites = Array[CompressedTexture2D]([ExtResource("2_bmt6w"), ExtResource("3_2k5ee"), ExtResource("4_em003"), ExtResource("5_7vpyw"), ExtResource("6_6tutk"), ExtResource("7_ub465")])
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, -9)
+scale = Vector2(3, 3)
+texture = ExtResource("2_bmt6w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 2.5)
+shape = SubResource("RectangleShape2D_fvheb")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

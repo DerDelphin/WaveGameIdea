@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://ui8tojsus8tx"]
+
+[ext_resource type="FontFile" uid="uid://3wwm15jhqa7d" path="res://Sta.Toasty_font (1).ttf" id="1_mifb0"]
+[ext_resource type="Script" uid="uid://q6824hlf10tx" path="res://Scripts/UI/clock.gd" id="2_4wx4h"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_h4irj"]
+font = ExtResource("1_mifb0")
+font_size = 61
+
+[node name="Clock" type="Label"]
+text = "10:00"
+label_settings = SubResource("LabelSettings_h4irj")
+script = ExtResource("2_4wx4h")
