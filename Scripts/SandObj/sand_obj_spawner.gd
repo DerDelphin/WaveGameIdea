@@ -32,17 +32,17 @@ func spawn() -> void:
 
 ## Funktion zum Berechnen einer zufälligen Position im oberen Bereich des Bildschirms
 func get_random_screen_position() -> Vector2:
-	var screen_size = get_viewport().size
+	#var screen_size = get_viewport().size
 	
 	# Definiere den oberen Bereich (hier 30% der Bildschirmhöhe)
-	var min_y = 15
-	var max_y = screen_size.y * 0.3  # 30% der Bildschirmhöhe als Obergrenze für den Bereich
+	var min_y = 25
+	var max_y = 120 #screen_size.y * 0.15  # 30% der Bildschirmhöhe als Obergrenze für den Bereich
 	
 	# Zufällige Y-Position im oberen Bereich
 	var random_y = randf_range(min_y, max_y)
 	
 	# Zufällige X-Position im gesamten Bildschirmbereich
-	var random_x = randf_range(0, screen_size.x)
+	var random_x = randf_range(5, 630)
 	
 	return Vector2(random_x, random_y)
 

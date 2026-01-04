@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://cak5d5xml8lis"]
+[gd_scene load_steps=6 format=3 uid="uid://cak5d5xml8lis"]
 
 [ext_resource type="Shader" uid="uid://bgg5f71elnr2f" path="res://VignetteShader.gdshader" id="1_6mh2a"]
-[ext_resource type="FontFile" uid="uid://3wwm15jhqa7d" path="res://Sta.Toasty_font (1).ttf" id="2_eorx4"]
 [ext_resource type="Script" uid="uid://df63qke3plsnl" path="res://Scripts/UI/game_lost_panel.gd" id="2_g43tx"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qay60"]
@@ -11,12 +10,10 @@ shader_parameter/inner_radius = 0.0
 shader_parameter/outer_radius = 10.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_0tcps"]
-font = ExtResource("2_eorx4")
 font_size = 70
 
 [sub_resource type="LabelSettings" id="LabelSettings_hn21q"]
 line_spacing = 30.0
-font = ExtResource("2_eorx4")
 font_size = 30
 
 [node name="GameLostPanel" type="Panel"]
@@ -35,12 +32,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -500.0
-offset_top = -298.5
-offset_right = 500.0
-offset_bottom = 298.5
+offset_left = -169.0
+offset_top = -110.0
+offset_right = 831.0
+offset_bottom = 487.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.333, 0.333)
 size_flags_horizontal = 8
 size_flags_vertical = 4
 
@@ -64,7 +62,6 @@ vertical_alignment = 1
 [node name="QuitButton" type="Button" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("2_eorx4")
 theme_override_font_sizes/font_size = 96
 text = "Quit Game"
 

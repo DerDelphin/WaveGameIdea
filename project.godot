@@ -25,8 +25,8 @@ DayInfoManager="*res://Scripts/Management/DaySpawnInfoManager.gd"
 
 [display]
 
-window/size/viewport_width=1920
-window/size/viewport_height=1080
+window/size/viewport_width=640
+window/size/viewport_height=360
 window/size/mode=3
 window/stretch/mode="viewport"
 
@@ -36,7 +36,8 @@ import/fbx/enabled=false
 
 [gui]
 
-theme/custom_font="uid://3wwm15jhqa7d"
+theme/custom="uid://cgv1juoxcxh0c"
+theme/custom_font="uid://0q4uqe5kgj1k"
 
 [input]
 

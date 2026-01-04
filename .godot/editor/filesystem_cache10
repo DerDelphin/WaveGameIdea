@@ -1,69 +1,69 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1767032780
-export_presets.cfg::TextFile::-1::1766935170::0::1::::<><><>0<>0<><>::
+::res://::1767533509
+export_presets.cfg::TextFile::-1::1767033580::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D::4479601964285290913::1766934792::1766934792::1::::<><><>0<>0<>9b37ec27d19b31d4f4480c3b3e81b3ad<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
-Sta.Toasty_font (1).ttf::FontFile::2012062548192082131::1764347073::1764347078::1::::<><><>0<>0<>1e7af24c8a9d1ada81bb14371990cb6e<>res://.godot/imported/Sta.Toasty_font (1).ttf-29eefee1ceda105822ed153995cb448e.fontdata::
-VignetteShader.gdshader::Shader::2821772171907264759::1767031722::0::1::::<><><>0<>0<><>::
-::res://Data/::1767031722
-StandartDayDataSet.tres::Resource/DayDataSet::8628546180593624294::1767031722::0::1::::<><><>0<>0<><>::uid://cedc0rje0w8fa::::res://Scripts/DayData.gd<>uid://b2uldfe20vjd::::res://Scripts/DayDataSet.gd
+Jersey10-Regular.ttf::FontFile::1789548491613584562::1767389179::1767438344::1::::<><><>0<>0<>edd15a81a4f078260ca1b4e16018886e<>res://.godot/imported/Jersey10-Regular.ttf-e30a6acef7e7be65d6e00feb5803926a.fontdata::
+VignetteShader.gdshader::Shader::2821772171907264759::1767438376::0::1::::<><><>0<>0<><>::
+::res://Data/::1767440349
+StandartDayDataSet.tres::Resource/DayDataSet::8628546180593624294::1767440349::0::1::::<><><>0<>0<><>::uid://cedc0rje0w8fa::::res://Scripts/DayData.gd<>uid://b2uldfe20vjd::::res://Scripts/DayDataSet.gd
 ::res://Music/::1766941574
 beach calm.wav::AudioStreamWAV::2654652384074166372::1766855569::1766940977::1::::<><><>0<>0<>a913d2d564da1ba1b2a56f45dc24b4b7<>res://.godot/imported/beach calm.wav-c7220a27207f6c1b4e1251cbdb84ce1d.sample::
 beach.wav::AudioStreamWAV::8161048133529921482::1764528740::1766940977::1::::<><><>0<>0<>756babe91bd8345796f4bf1a4fe3dcd4<>res://.godot/imported/beach.wav-0ee240ead3dee099551ae150ecbf7ca2.sample::
 beach_day_ended.wav::AudioStreamWAV::3093113436300635579::1766941574::1766941574::1::::<><><>0<>0<>9099383c2a8bf901428ef9d88df6d67f<>res://.godot/imported/beach_day_ended.wav-9aaf84835616b6c7e1a70e9eff43a2d8.sample::
 loose.wav::AudioStreamWAV::3449152891782898976::1766938978::1766940990::1::::<><><>0<>0<>0312ee7e657cddbfc0f65025bda3d76e<>res://.godot/imported/loose.wav-ffa6399345720ae7255ddb78bd436986.sample::
-::res://Scenes/::1767032705
+::res://Scenes/::1767438792
 audio_manager.tscn::PackedScene::2666665566418297301::1766941052::0::1::::<><><>0<>0<><>::uid://imag58ro22ca::::res://Scripts/Management/audio_manager.gd
-cam_script.gd::GDScript::8840350677130979088::1767031788::0::1::::<>Camera2D<><>0<>0<><>::
+cam_script.gd::GDScript::8840350677130979088::1767032933::0::1::::<>Camera2D<><>0<>0<><>::
 day_spawn_info_manager.tscn::PackedScene::1782828132631736849::1767025358::0::1::::<><><>0<>0<><>::uid://xlv4krn5gqy::::res://Scripts/Management/DaySpawnInfoManager.gd
-pre_wave.tscn::PackedScene::470284098741967137::1764571824::0::1::::<><><>0<>0<><>::uid://bhr1onb0dy6my::::res://Sprites/preWave.png<>res://Scripts/pre_wave.gd
-world.tscn::PackedScene::4101185072835980785::1767032704::0::1::::<><><>0<>0<><>::uid://df4g0piy0xhj5::::res://Scenes/Wave/wave_spawner.tscn<>uid://v23nplchkkd1::::res://Sprites/Water+.png<>uid://y5i2qg5ii8sl::::res://Scenes/SandObj/sand_obj_spawner.tscn<>uid://dxcq5smkgc6ic::::res://Scenes/UI/HUD.tscn<>uid://0nu6ihjb2r5j::::res://Scenes/day_spawn_info_manager.tscn<>uid://bd80uew0lexeb::::res://Scenes/audio_manager.tscn<>uid://prpbs8veklfh::::res://Sprites/beach_tileset.png<>uid://dx7ljwmy4wp33::::res://Scenes/cam_script.gd<>uid://mjl7hrt5qy5u::::res://Scenes/UI/escape_menu.tscn<>uid://4lo6j8jiatcb::::res://Sprites/dotted line.png<>uid://cumix6ytnnhpv::::res://SFX/ocean bg.wav<>uid://dswa7o6xfaw0j::::res://Scenes/UI/dotted_line.gd<>uid://dojjjgunsrlcs::::res://Music/beach.wav<>uid://bd185e0v5yv53::::res://Scripts/Management/musicManager.gd
-::res://Scenes/SandObj/::1767025659
-builder_castle.tscn::PackedScene::980238065147590400::1766942011::0::1::::<><><>0<>0<><>::uid://68n73ot7vydd::::res://Scripts/SandObj/sand_object.gd<>uid://bp1n02d4rkyl1::::res://Sprites/BuilderCastle/builder_caslte_1.png<>uid://c1wb7ws6bpbkg::::res://Sprites/BuilderCastle/builder_caslte_2.png<>uid://cng2rb7n0gc6i::::res://Sprites/BuilderCastle/builder_caslte_3.png<>uid://dpui8y5cfry6e::::res://Sprites/BuilderCastle/builder_caslte_4.png<>uid://bfy6c0cq0p0c8::::res://Sprites/BuilderCastle/builder_caslte_5.png<>uid://c70ngg3vs33x2::::res://Sprites/BuilderCastle/builder_caslte_6.png
-sand_object.tscn::PackedScene::877114353128501962::1766941265::0::1::::<><><>0<>0<><>::uid://68n73ot7vydd::::res://Scripts/SandObj/sand_object.gd<>uid://bi7jd0o5xgo0s::::res://Sprites/sand_Obj_small.png
-sand_obj_spawner.tscn::PackedScene::1746998383328669811::1767025659::0::1::::<><><>0<>0<><>::uid://d0qxwj6f104hu::::res://Scripts/SandObj/sand_obj_spawner.gd
-strong_sand_object.tscn::PackedScene::383479995377469094::1766941265::0::1::::<><><>0<>0<><>::uid://68n73ot7vydd::::res://Scripts/SandObj/sand_object.gd<>uid://qr0b8iaa57o::::res://Sprites/old/big castle wrong outlineColor.png
-::res://Scenes/UI/::1767031398
-clock.tscn::PackedScene::1422330235714064625::1767023789::0::1::::<><><>0<>0<><>::uid://3wwm15jhqa7d::::res://Sta.Toasty_font (1).ttf<>uid://q6824hlf10tx::::res://Scripts/UI/clock.gd
-destruction_point_indicator.tscn::PackedScene::7603565001261829650::1766941787::0::1::::<><><>0<>0<><>::uid://b4p8mpeyf5dco::::res://Scripts/UI/destruction_point_indicator.gd
-dotted_line.gd::GDScript::8468135476825719459::1767031359::0::1::::<>TextureRect<><>0<>0<><>::
-escape_menu.tscn::PackedScene::861570950597461232::1767023537::0::1::::<><><>0<>0<><>::uid://3wwm15jhqa7d::::res://Sta.Toasty_font (1).ttf<>uid://den0f82ul5fr1::::res://Scripts/UI/escape_menu.gd
-game_lost_panel.tscn::PackedScene::4795313623883749190::1767024896::0::1::::<><><>0<>0<><>::uid://bgg5f71elnr2f::::res://VignetteShader.gdshader<>uid://3wwm15jhqa7d::::res://Sta.Toasty_font (1).ttf<>uid://df63qke3plsnl::::res://Scripts/UI/game_lost_panel.gd
-HUD.tscn::PackedScene::8778760220384020414::1767031398::0::1::::<><><>0<>0<><>::uid://ui8tojsus8tx::::res://Scenes/UI/clock.tscn<>uid://cv4l4ahc18chw::::res://Scenes/UI/PointLabel.tscn<>uid://k1lpj2cve4i2::::res://Scenes/UI/upgrade_buttons.tscn<>uid://4575efr67nyj::::res://Scenes/UI/wave_cool_down_bar.tscn<>uid://cak5d5xml8lis::::res://Scenes/UI/game_lost_panel.tscn<>uid://ctpn58msb8pi4::::res://Scenes/UI/Overcrowd_meter.tscn<>uid://b8tupxwr7fcdo::::res://Scenes/UI/vignette.tscn
-Overcrowd_meter.tscn::PackedScene::6138239710171521345::1767023416::0::1::::<><><>0<>0<><>::uid://3wwm15jhqa7d::::res://Sta.Toasty_font (1).ttf<>uid://5n43jcxhibeq::::res://Scripts/UI/overcrowd_meter.gd<>uid://dbrbugvlolj4h::::res://Sprites/sand_Obj_small_indicated.png
-PointLabel.tscn::PackedScene::6307393724536834868::1767024154::0::1::::<><><>0<>0<><>::uid://3wwm15jhqa7d::::res://Sta.Toasty_font (1).ttf<>uid://dake4pl3wkfkw::::res://Scripts/UI/point_label.gd
-upgrade_buttons.tscn::PackedScene::756257446353878031::1767024652::0::1::::<><><>0<>0<><>::uid://bkveohay8tntx::::res://Scripts/UI/upgrade_buttons.gd<>uid://3wwm15jhqa7d::::res://Sta.Toasty_font (1).ttf
-vignette.tscn::PackedScene::4743118070677322564::1767024999::0::1::::<><><>0<>0<><>::uid://bgg5f71elnr2f::::res://VignetteShader.gdshader<>uid://bvtcdk8sasuyj::::res://Scripts/UI/vignette.gd
-wave_cool_down_bar.tscn::PackedScene::2099404534342931005::1767026578::0::1::::<><><>0<>0<><>::uid://3wwm15jhqa7d::::res://Sta.Toasty_font (1).ttf<>uid://2xbv6je32dgs::::res://Scripts/UI/wave_cool_down_bar.gd
-::res://Scenes/Wave/::1767030590
-wave.tscn::PackedScene::5208411519491332947::1767030362::0::1::::<><><>0<>0<><>::uid://dicd2iewrypfk::::res://Scripts/Wave/wave.gd<>uid://d0h760ntx7pgt::::res://Sprites/Wave/wave.png<>uid://dyn7u6a045bte::::res://SFX/wave move.wav
+pre_wave.tscn::PackedScene::470284098741967137::1767033223::0::1::::<><><>0<>0<><>::uid://bhr1onb0dy6my::::res://Sprites/preWave.png<>uid://u3ay2biuyygg::::res://Scripts/pre_wave.gd
+world.tscn::PackedScene::4101185072835980785::1767438792::0::1::::<><><>0<>0<><>::uid://df4g0piy0xhj5::::res://Scenes/Wave/wave_spawner.tscn<>uid://v23nplchkkd1::::res://Sprites/Water+.png<>uid://y5i2qg5ii8sl::::res://Scenes/SandObj/sand_obj_spawner.tscn<>uid://dxcq5smkgc6ic::::res://Scenes/UI/HUD.tscn<>uid://0nu6ihjb2r5j::::res://Scenes/day_spawn_info_manager.tscn<>uid://bd80uew0lexeb::::res://Scenes/audio_manager.tscn<>uid://prpbs8veklfh::::res://Sprites/beach_tileset.png<>uid://dx7ljwmy4wp33::::res://Scenes/cam_script.gd<>uid://mjl7hrt5qy5u::::res://Scenes/UI/escape_menu.tscn<>uid://4lo6j8jiatcb::::res://Sprites/dotted line.png<>uid://cumix6ytnnhpv::::res://SFX/ocean bg.wav<>uid://dswa7o6xfaw0j::::res://Scenes/UI/dotted_line.gd<>uid://dojjjgunsrlcs::::res://Music/beach.wav<>uid://bd185e0v5yv53::::res://Scripts/Management/musicManager.gd<>uid://cak5d5xml8lis::::res://Scenes/UI/game_lost_panel.tscn
+::res://Scenes/SandObj/::1767388503
+builder_castle.tscn::PackedScene::980238065147590400::1767033169::0::1::::<><><>0<>0<><>::uid://68n73ot7vydd::::res://Scripts/SandObj/sand_object.gd<>uid://bp1n02d4rkyl1::::res://Sprites/BuilderCastle/builder_caslte_1.png<>uid://c1wb7ws6bpbkg::::res://Sprites/BuilderCastle/builder_caslte_2.png<>uid://cng2rb7n0gc6i::::res://Sprites/BuilderCastle/builder_caslte_3.png<>uid://dpui8y5cfry6e::::res://Sprites/BuilderCastle/builder_caslte_4.png<>uid://bfy6c0cq0p0c8::::res://Sprites/BuilderCastle/builder_caslte_5.png<>uid://c70ngg3vs33x2::::res://Sprites/BuilderCastle/builder_caslte_6.png
+sand_object.tscn::PackedScene::877114353128501962::1767033177::0::1::::<><><>0<>0<><>::uid://68n73ot7vydd::::res://Scripts/SandObj/sand_object.gd<>uid://bi7jd0o5xgo0s::::res://Sprites/sand_Obj_small.png
+sand_obj_spawner.tscn::PackedScene::1746998383328669811::1767388503::0::1::::<><><>0<>0<><>::uid://d0qxwj6f104hu::::res://Scripts/SandObj/sand_obj_spawner.gd
+strong_sand_object.tscn::PackedScene::383479995377469094::1767033186::0::1::::<><><>0<>0<><>::uid://68n73ot7vydd::::res://Scripts/SandObj/sand_object.gd<>uid://qr0b8iaa57o::::res://Sprites/old/big castle wrong outlineColor.png
+::res://Scenes/UI/::1767444987
+clock.tscn::PackedScene::1422330235714064625::1767439826::0::1::::<><><>0<>0<><>::uid://q6824hlf10tx::::res://Scripts/UI/clock.gd
+destruction_point_indicator.tscn::PackedScene::7603565001261829650::1767389261::0::1::::<><><>0<>0<><>::uid://b4p8mpeyf5dco::::res://Scripts/UI/destruction_point_indicator.gd
+dotted_line.gd::GDScript::8468135476825719459::1767379986::0::1::::<>TextureRect<><>0<>0<><>::
+escape_menu.tscn::PackedScene::861570950597461232::1767439673::0::1::::<><><>0<>0<><>::uid://den0f82ul5fr1::::res://Scripts/UI/escape_menu.gd<>uid://cgv1juoxcxh0c::::res://Themes/default_theme.tres
+game_lost_panel.tscn::PackedScene::4795313623883749190::1767389308::0::1::::<><><>0<>0<><>::uid://bgg5f71elnr2f::::res://VignetteShader.gdshader<>uid://df63qke3plsnl::::res://Scripts/UI/game_lost_panel.gd
+HUD.tscn::PackedScene::8778760220384020414::1767444987::0::1::::<><><>0<>0<><>::uid://ui8tojsus8tx::::res://Scenes/UI/clock.tscn<>uid://cv4l4ahc18chw::::res://Scenes/UI/PointLabel.tscn<>uid://k1lpj2cve4i2::::res://Scenes/UI/upgrade_buttons.tscn<>uid://4575efr67nyj::::res://Scenes/UI/wave_cool_down_bar.tscn<>uid://cak5d5xml8lis::::res://Scenes/UI/game_lost_panel.tscn<>uid://ctpn58msb8pi4::::res://Scenes/UI/Overcrowd_meter.tscn<>uid://b8tupxwr7fcdo::::res://Scenes/UI/vignette.tscn
+Overcrowd_meter.tscn::PackedScene::6138239710171521345::1767440325::0::1::::<><><>0<>0<><>::uid://5n43jcxhibeq::::res://Scripts/UI/overcrowd_meter.gd<>uid://dbrbugvlolj4h::::res://Sprites/sand_Obj_small_indicated.png
+PointLabel.tscn::PackedScene::6307393724536834868::1767440099::0::1::::<><><>0<>0<><>::uid://dake4pl3wkfkw::::res://Scripts/UI/point_label.gd
+upgrade_buttons.tscn::PackedScene::756257446353878031::1767389344::0::1::::<><><>0<>0<><>::uid://bkveohay8tntx::::res://Scripts/UI/upgrade_buttons.gd
+vignette.tscn::PackedScene::4743118070677322564::1767033268::0::1::::<><><>0<>0<><>::uid://bgg5f71elnr2f::::res://VignetteShader.gdshader<>uid://bvtcdk8sasuyj::::res://Scripts/UI/vignette.gd
+wave_cool_down_bar.tscn::PackedScene::2099404534342931005::1767389350::0::1::::<><><>0<>0<><>::uid://2xbv6je32dgs::::res://Scripts/UI/wave_cool_down_bar.gd
+::res://Scenes/Wave/::1767382333
+wave.tscn::PackedScene::5208411519491332947::1767382333::0::1::::<><><>0<>0<><>::uid://dicd2iewrypfk::::res://Scripts/Wave/wave.gd<>uid://d0h760ntx7pgt::::res://Sprites/Wave/wave.png<>uid://dyn7u6a045bte::::res://SFX/wave move.wav
 wave_spawner.tscn::PackedScene::7570482972274878260::1767030590::0::1::::<><><>0<>0<><>::uid://civ8thg8qwuy::::res://Scripts/Wave/wave_spawner.gd
 ::res://Scripts/::1767029623
 DayData.gd::GDScript::5059956861049911598::1767029580::0::1::::DayData<>Resource<><>0<>0<><>::
 DayDataSet.gd::GDScript::127161192098831937::1767029623::0::1::::DayDataSet<>Resource<><>0<>0<><>::
 pre_wave.gd::GDScript::1461623728994478578::1767026198::0::1::::<>Sprite2D<><>0<>0<><>::
-::res://Scripts/Management/::1767030250
+::res://Scripts/Management/::1767439948
 audio_manager.gd::GDScript::586295624387659208::1765040499::0::1::::<>Node<><>0<>0<><>::
 DaySpawnInfoManager.gd::GDScript::48187616351968304::1767030189::0::1::::<>Node<><>0<>0<><>::
 GLOBAL.gd::GDScript::8348279540399474732::1767030250::0::1::::<>Node<><>0<>0<><>::
-musicManager.gd::GDScript::2652718520499906156::1767028758::0::1::::<>AudioStreamPlayer<><>0<>0<><>::
+musicManager.gd::GDScript::2652718520499906156::1767439948::0::1::::<>AudioStreamPlayer<><>0<>0<><>::
 UpgradeManager.gd::GDScript::1868915332628581053::1767026154::0::1::::<>Node<><>0<>0<><>::
-::res://Scripts/SandObj/::1767029016
+::res://Scripts/SandObj/::1767388823
 sand_object.gd::GDScript::2244826578161852113::1766941943::0::1::::<>Area2D<><>0<>0<><>::
-sand_obj_spawner.gd::GDScript::8948449485256631998::1767029015::0::1::::SandObjSpawner<>Node<><>0<>0<><>::
-::res://Scripts/UI/::1767030289
+sand_obj_spawner.gd::GDScript::8948449485256631998::1767388823::0::1::::SandObjSpawner<>Node<><>0<>0<><>::
+::res://Scripts/UI/::1767439638
 clock.gd::GDScript::1189070620279404609::1767026210::0::1::::<>Label<><>0<>0<><>::
 destruction_point_indicator.gd::GDScript::4454888700922873246::1763657628::0::1::::<>Node2D<><>0<>0<><>::
-escape_menu.gd::GDScript::7468382966127763536::1765572872::0::1::::<>Control<><>0<>0<><>::
+escape_menu.gd::GDScript::7468382966127763536::1767439638::0::1::::<>Control<><>0<>0<><>::
 game_lost_panel.gd::GDScript::7575931160850667093::1767024890::0::1::::<>Panel<><>0<>0<><>::
 overcrowd_meter.gd::GDScript::2134313491817758124::1767026231::0::1::::<>BoxContainer<><>0<>0<><>::
 point_label.gd::GDScript::7180201290759299950::1767030289::0::1::::<>VBoxContainer<><>0<>0<><>::
 upgrade_buttons.gd::GDScript::3131929290793177337::1767024628::0::1::::<>HBoxContainer<><>0<>0<><>::
 vignette.gd::GDScript::3899736945816780697::1767026236::0::1::::<>ColorRect<><>0<>0<><>::
 wave_cool_down_bar.gd::GDScript::1942679327582336706::1767024312::0::1::::<>ProgressBar<><>0<>0<><>::
-::res://Scripts/Wave/::1767030729
-wave.gd::GDScript::7725132350494690048::1766934269::0::1::::<>Node2D<><>0<>0<><>::
+::res://Scripts/Wave/::1767382321
+wave.gd::GDScript::7725132350494690048::1767382321::0::1::::<>Node2D<><>0<>0<><>::
 WaveType.gd::GDScript::9167845479042370462::1765036452::0::1::::WaveType<>Resource<><>0<>0<><>::
-wave_spawner.gd::GDScript::158227706430150568::1767030729::0::1::::<>Node<><>0<>0<><>::
+wave_spawner.gd::GDScript::158227706430150568::1767379964::0::1::::<>Node<><>0<>0<><>::
 ::res://SFX/::1766940990
 click.wav::AudioStreamWAV::3069645124448845684::1764368277::1764572110::1::::<><><>0<>0<>bba1eae8323fd2822df499b31c03e762<>res://.godot/imported/click.wav-f799785ae70d0d1b7dc7b6ab9b14a2e2.sample::
 heartbeat.mp3::AudioStreamMP3::5550492377869128931::1765039437::1765039442::1::::<><><>0<>0<>e26b32de108a74f360cbc987c4e36dd3<>res://.godot/imported/heartbeat.mp3-bdbcb1bcb2e3961a5fd116d4bda4274e.mp3str::
@@ -73,8 +73,9 @@ succes.wav::AudioStreamWAV::5298299195076236222::1766940057::1766940057::1::::<>
 wave impact2.wav::AudioStreamWAV::1685520426089658126::1764514487::1764572144::1::::<><><>0<>0<>df116c301b8b66098de30fabb6fe75de<>res://.godot/imported/wave impact2.wav-b331e533ee512f18a99d1ce73c3c5dda.sample::
 wave impact.wav::AudioStreamWAV::2290940422964478076::1764369713::1764571732::1::::<><><>0<>0<>276e29e7db5aacd924f32e4b23c0ed16<>res://.godot/imported/wave impact.wav-94ff44c018c7f3b0075003a02eceea3a.sample::
 wave move.wav::AudioStreamWAV::8872611498241156974::1764370115::1764533500::1::::<><><>0<>0<>95ef93d1b8a59d1bc5e653403bae91a2<>res://.godot/imported/wave move.wav-383b0fbe6d97004a7fb98dea4e68b880.sample::
-::res://Sprites/::1766932965
+::res://Sprites/::1767437442
 beach_tileset.png::CompressedTexture2D::1088840614433647309::1764168982::1764571825::1::::<><><>0<>0<>9f5289628a15220a0aa118a57324dbc0<>res://.godot/imported/beach_tileset.png-629d39c3538b9aa30e96e2c25d9df81c.ctex::
+buttons.png::CompressedTexture2D::7429810374778717810::1767437442::1767437442::1::::<><><>0<>0<>f850bf023a89d4834cd9426eaa16ff25<>res://.godot/imported/buttons.png-30219d44faf4c38d1e9c9db9df5a02a2.ctex::
 dotted line.png::CompressedTexture2D::2059090542415707505::1764346686::1764346693::1::::<><><>0<>0<>5a8ba12ed807e48fba798967aee755b7<>res://.godot/imported/dotted line.png-35454164c0123f0ff5a8a615a7cc8d14.ctex::
 preWave.png::CompressedTexture2D::2914441339394171004::1764513231::1764571825::1::::<><><>0<>0<>9b165b93c647d764889283b3fd62da03<>res://.godot/imported/preWave.png-db90249107a64b72cfe3d14edc382392.ctex::
 sand_Obj_small.png::CompressedTexture2D::3014544667348952572::1764345577::1764571825::1::::<><><>0<>0<>c50e11d57ea9ffcf959a50059ca34173<>res://.godot/imported/sand_Obj_small.png-dd52136b7ecec4ee15103779f96a398b.ctex::
@@ -107,3 +108,7 @@ wave_mouseFollower.png::CompressedTexture2D::7699908154038296628::1763762672::17
 wave.png::CompressedTexture2D::8930433423749604907::1766933510::1766933511::1::::<><><>0<>0<>e606fb45bb18de9fb3d60c47f367dd21<>res://.godot/imported/wave.png-faefbce86906220ee7a79c40ee2ee778.ctex::
 wave_extraLarge.png::CompressedTexture2D::5500999298155683832::1766933452::1766933452::1::::<><><>0<>0<>9fb525d28cdf7f2f59e1f34e33393be9<>res://.godot/imported/wave_extraLarge.png-edd119855b21f79ab903083a42fb8b3c.ctex::
 Wave_large.png::CompressedTexture2D::2474451649090610018::1766932936::1766932966::1::::<><><>0<>0<>c04f0484fcadc18f6deefdd1e3f4f6fb<>res://.godot/imported/Wave_large.png-8a5308ce9e794dc4ae25593859ae098b.ctex::
+::res://Themes/::1767439515
+button_styleBox.tres::StyleBoxTexture::376279522335218923::1767438459::0::1::::<><><>0<>0<><>::uid://dd4b5kofo08xy::::res://Sprites/buttons.png
+default_theme.tres::Theme::5238922149149588904::1767439515::0::1::::<><><>0<>0<><>::uid://fmjjexivvukp::::res://Themes/button_styleBox.tres<>uid://04pdprlnod1i::::res://Themes/progressBar_styleBox.tres
+progressBar_styleBox.tres::StyleBoxFlat::1815504972721398632::1767439299::0::1::::<><><>0<>0<><>::

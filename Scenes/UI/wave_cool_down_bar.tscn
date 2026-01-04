@@ -1,13 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://4575efr67nyj"]
+[gd_scene load_steps=2 format=3 uid="uid://4575efr67nyj"]
 
-[ext_resource type="FontFile" uid="uid://3wwm15jhqa7d" path="res://Sta.Toasty_font (1).ttf" id="1_b0qhf"]
 [ext_resource type="Script" uid="uid://2xbv6je32dgs" path="res://Scripts/UI/wave_cool_down_bar.gd" id="2_cdjrt"]
 
 [node name="WaveCoolDownBar" type="ProgressBar" groups=["WaveCoolDownBar"]]
 custom_minimum_size = Vector2(300, 100)
+scale = Vector2(0.333, 0.333)
 size_flags_horizontal = 0
 size_flags_vertical = 1
-theme_override_fonts/font = ExtResource("1_b0qhf")
 theme_override_font_sizes/font_size = 46
 value = 50.0
 script = ExtResource("2_cdjrt")

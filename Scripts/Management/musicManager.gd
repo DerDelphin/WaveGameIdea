@@ -7,6 +7,7 @@ var LooseMusic = preload("res://Music/loose.wav")
 
 var PointGoalReachedSFX = preload("res://SFX/succes.wav")
 var isLocked = false
+var canPlayGoalReachedSound = true
 
 func _ready() -> void:
 	self.playBeachMusic()
@@ -25,6 +26,7 @@ func playBeachMusic()-> void:
 	self.stream = beachMusic
 	self.play()
 func playDayEndedMusic()-> void:
+	canPlayGoalReachedSound = true
 	if(isLocked):return
 	self.stop()
 	self.stream = DayEndedMusic
@@ -36,8 +38,9 @@ func playLooseMusic()-> void:
 	self.play()
 
 func _on_PointsIncresed() -> void:
-	if GLOBAL.points == DayInfoManager.getRequiredPoints(GLOBAL.dayCount-1):
+	if GLOBAL.points >= DayInfoManager.getRequiredPoints(GLOBAL.dayCount-1) and canPlayGoalReachedSound:
 		AudioManager.playAudio(PointGoalReachedSFX,1)
+		canPlayGoalReachedSound = false
 func _on_finished() -> void:
 	match stream:
 		beachMusic: playBeachMusic()

@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://k1lpj2cve4i2"]
+[gd_scene load_steps=2 format=3 uid="uid://k1lpj2cve4i2"]
 
 [ext_resource type="Script" uid="uid://bkveohay8tntx" path="res://Scripts/UI/upgrade_buttons.gd" id="1_a5q5l"]
-[ext_resource type="FontFile" uid="uid://3wwm15jhqa7d" path="res://Sta.Toasty_font (1).ttf" id="1_whbup"]
 
 [node name="UpgradeButtons" type="HBoxContainer"]
 anchors_preset = -1
@@ -15,6 +14,7 @@ offset_right = 36.0
 offset_bottom = -36.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.333, 0.333)
 size_flags_horizontal = 6
 size_flags_vertical = 0
 script = ExtResource("1_a5q5l")
@@ -22,20 +22,17 @@ script = ExtResource("1_a5q5l")
 [node name="NextDayButton" type="Button" parent="."]
 layout_mode = 2
 size_flags_horizontal = 6
-theme_override_fonts/font = ExtResource("1_whbup")
 theme_override_font_sizes/font_size = 56
 text = "U1"
 
 [node name="UpgradeButton2" type="Button" parent="."]
 layout_mode = 2
 size_flags_horizontal = 6
-theme_override_fonts/font = ExtResource("1_whbup")
 theme_override_font_sizes/font_size = 56
 text = "Upgrade 2"
 
 [node name="UpgradeButton3" type="Button" parent="."]
 layout_mode = 2
 size_flags_horizontal = 6
-theme_override_fonts/font = ExtResource("1_whbup")
 theme_override_font_sizes/font_size = 56
 text = "Upgrade 3"

@@ -1,16 +1,18 @@
 extends VBoxContainer
 
 @onready var PointText: Label = %Points
-@onready var RequiredPointsLabel: Label = %RequiredLabel
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	GLOBAL.onPointsIncreased.connect(changePointText)
-	GLOBAL.onDayEnded.connect(displayRequiredPoints)
-	RequiredPointsLabel.text = str(DayInfoManager.getRequiredPoints(0))
-	displayRequiredPoints()
+	updateFontColor()
+	PointText.text = str(GLOBAL.points) + " P / " + str(DayInfoManager.getRequiredPoints(GLOBAL.dayCount-1))
 
 func changePointText() -> void:
-	PointText.text = str(GLOBAL.points) + " P"
+	updateFontColor()
+	PointText.text = str(GLOBAL.points) + " P / " + str(DayInfoManager.getRequiredPoints(GLOBAL.dayCount-1))
 
-func displayRequiredPoints() -> void:
-	RequiredPointsLabel.text = "required: " + str(DayInfoManager.getRequiredPoints(GLOBAL.dayCount-1))
+func updateFontColor() -> void:
+	if GLOBAL.isPointGoalAchieved():
+		PointText.add_theme_color_override("font_color",Color("fff7ffff"))
+	else:
+		PointText.add_theme_color_override("font_color",Color("ff6e5aff")) 

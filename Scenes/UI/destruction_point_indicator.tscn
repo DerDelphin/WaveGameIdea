@@ -42,6 +42,7 @@ _data = {
 }
 
 [node name="DestructionPointIndicator" type="Node2D"]
+scale = Vector2(0.333, 0.333)
 script = ExtResource("1_xp5ak")
 lerp_duration = 2.0
 target_color = Color(0.901961, 0.392157, 0.0313726, 0)

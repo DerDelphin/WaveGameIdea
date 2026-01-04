@@ -1,3 +1,16 @@
-res://Scenes/world.tscn
+res://Scenes/UI/HUD.tscn
+res://Themes/default_theme.tres
 res://Data/StandartDayDataSet.tres
 res://VignetteShader.gdshader
+res://Scenes/UI/Overcrowd_meter.tscn
+res://Scripts/UI/overcrowd_meter.gd
+res://Scenes/world.tscn
+res://Scenes/Wave/wave.tscn
+res://Scripts/Wave/WaveType.gd
+res://Scripts/Wave/wave.gd
+res://Scenes/Wave/wave_big.tscn
+res://Scenes/Wave/wave_huge.tscn
+res://Scripts/Wave/wave_spawner.gd
+res://Scripts/Management/UpgradeManager.gd
+res://Scenes/UI/PointLabel.tscn
+res://Scripts/UI/point_label.gd

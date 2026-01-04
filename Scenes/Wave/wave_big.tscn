@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://c4s4miuu8ecw8"]
+
+[ext_resource type="Script" uid="uid://dicd2iewrypfk" path="res://Scripts/Wave/wave.gd" id="1_bsuos"]
+[ext_resource type="Texture2D" uid="uid://bbiv4e38gi5i1" path="res://Sprites/Wave/Wave_large.png" id="2_bsuos"]
+[ext_resource type="AudioStream" uid="uid://dyn7u6a045bte" path="res://SFX/wave move.wav" id="3_hj5ru"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3rxug"]
+size = Vector2(138.13812, 45)
+
+[node name="Wave_big" type="Area2D"]
+scale = Vector2(0.333, 0.333)
+script = ExtResource("1_bsuos")
+
+[node name="Wave" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("2_bsuos")
+
+[node name="KillTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 4.78
+
+[node name="HitBoxBig" type="CollisionShape2D" parent="."]
+position = Vector2(3.003, -2.4999998)
+shape = SubResource("RectangleShape2D_3rxug")
+
+[node name="WaveMoveSoundPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("3_hj5ru")
+volume_db = -2.0
+autoplay = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

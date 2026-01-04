@@ -1,4 +1,4 @@
-extends BoxContainer
+extends Control
 
 var filledSprite = preload("res://Sprites/sand_Obj_small.png")
 var indicatedSprite = preload("res://Sprites/sand_Obj_small_indicated.png")

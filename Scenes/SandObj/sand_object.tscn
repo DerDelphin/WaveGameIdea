@@ -7,6 +7,7 @@
 size = Vector2(41, 49)
 
 [node name="SandObject" type="Area2D" groups=["SandObj"]]
+scale = Vector2(0.333, 0.333)
 script = ExtResource("1_p2tgq")
 
 [node name="SandObject" type="Sprite2D" parent="."]

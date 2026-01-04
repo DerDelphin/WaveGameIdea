@@ -12,6 +12,7 @@
 size = Vector2(70, 73)
 
 [node name="BuilderCastle" type="Area2D" groups=["SandObj"]]
+scale = Vector2(0.333, 0.333)
 script = ExtResource("1_e463x")
 type = "Builder"
 builderCaslteSprites = Array[CompressedTexture2D]([ExtResource("2_bmt6w"), ExtResource("3_2k5ee"), ExtResource("4_em003"), ExtResource("5_7vpyw"), ExtResource("6_6tutk"), ExtResource("7_ub465")])

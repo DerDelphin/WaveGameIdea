@@ -21,8 +21,11 @@ size_flags_horizontal = 4
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 34.0
+offset_right = 1281.9219
+offset_bottom = 164.0
 grow_horizontal = 2
+scale = Vector2(0.333, 0.333)
+metadata/_edit_use_anchors_ = true
 
 [node name="MarginContainer" type="MarginContainer" parent="Upper"]
 layout_mode = 2
@@ -44,39 +47,42 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -345.5
-offset_top = -55.0
-offset_right = 345.5
-offset_bottom = 55.0
+offset_left = -112.0
+offset_top = -57.0
+offset_right = 579.0
+offset_bottom = 53.0
 
-[node name="Lower" type="HBoxContainer" parent="."]
+[node name="Lower2" type="HBoxContainer" parent="."]
+visible = false
 layout_mode = 1
-anchors_preset = 12
+anchors_preset = -1
+anchor_left = -0.1328125
 anchor_top = 1.0
-anchor_right = 1.0
+anchor_right = 1.1328125
 anchor_bottom = 1.0
-offset_top = -137.0
+offset_top = -340.0
 grow_horizontal = 2
 grow_vertical = 0
+metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Lower"]
+[node name="MarginContainer" type="MarginContainer" parent="Lower2"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 50
 
-[node name="WaveCoolDownBar" parent="Lower/MarginContainer" instance=ExtResource("6_mbl0m")]
+[node name="OvercrowdMeter" parent="Lower2/MarginContainer" instance=ExtResource("7_mbl0m")]
 layout_mode = 2
+size_flags_horizontal = 0
 
-[node name="OvercrowdMeter" parent="Lower/MarginContainer" instance=ExtResource("7_mbl0m")]
+[node name="WaveCoolDownBar" parent="Lower2/MarginContainer" instance=ExtResource("6_mbl0m")]
 layout_mode = 2
+size_flags_horizontal = 8
 
 [node name="GameLostPanel" parent="." instance=ExtResource("7_duuxe")]
+visible = false
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-metadata/_edit_use_anchors_ = true
 
 [node name="Vignette" parent="." instance=ExtResource("8_mbl0m")]
 layout_mode = 0

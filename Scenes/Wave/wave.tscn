@@ -8,8 +8,8 @@
 size = Vector2(98, 45)
 
 [node name="Wave" type="Area2D"]
+scale = Vector2(0.333, 0.333)
 script = ExtResource("1_s206c")
-speed = 400
 
 [node name="Wave" type="Sprite2D" parent="."]
 scale = Vector2(3, 3)
@@ -20,14 +20,6 @@ unique_name_in_owner = true
 wait_time = 4.78
 
 [node name="HitBox" type="CollisionShape2D" parent="."]
-position = Vector2(1, -2.5)
-shape = SubResource("RectangleShape2D_3rxug")
-
-[node name="HitBoxBig" type="CollisionShape2D" parent="."]
-position = Vector2(1, -2.5)
-shape = SubResource("RectangleShape2D_3rxug")
-
-[node name="HitBoxLarge" type="CollisionShape2D" parent="."]
 position = Vector2(1, -2.5)
 shape = SubResource("RectangleShape2D_3rxug")
 
