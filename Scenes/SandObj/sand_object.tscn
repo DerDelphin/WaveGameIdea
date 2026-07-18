@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://mq47eya7m2s1"]
+[gd_scene load_steps=5 format=3 uid="uid://mq47eya7m2s1"]
 
 [ext_resource type="Script" uid="uid://68n73ot7vydd" path="res://Scripts/SandObj/sand_object.gd" id="1_p2tgq"]
 [ext_resource type="Texture2D" uid="uid://bi7jd0o5xgo0s" path="res://Sprites/sand_Obj_small.png" id="2_e6dov"]
+[ext_resource type="PackedScene" uid="uid://bh78nla7skvtc" path="res://Scenes/sand_spawn_particle.tscn" id="3_gekpx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_anv40"]
 size = Vector2(41, 49)
@@ -17,3 +18,5 @@ texture = ExtResource("2_e6dov")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)
 shape = SubResource("RectangleShape2D_anv40")
+
+[node name="SandSpawnParticle" parent="." instance=ExtResource("3_gekpx")]

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Upgrade" load_steps=2 format=3 uid="uid://ha6c2lfu1akl"]
+
+[ext_resource type="Script" uid="uid://dfuf1q566o5ht" path="res://Scripts/Upgrade.gd" id="1_d1c6a"]
+
+[resource]
+script = ExtResource("1_d1c6a")
+name = "Wave Size +"
+id = "wave_size"
+describtion = "This Upgrade makes waves bigger."
+metadata/_custom_type_script = "uid://dfuf1q566o5ht"

@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bh78nla7skvtc"]
+
+[ext_resource type="Texture2D" uid="uid://pygttdmbibf6" path="res://Sprites/particle_3.png" id="1_wksly"]
+[ext_resource type="Script" uid="uid://c4tg52cnm6mjw" path="res://Scripts/particle/sand_spawn_particle.gd" id="2_wksly"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_wksly"]
+particle_flag_disable_z = true
+angle_min = -720.0
+angle_max = 720.0
+spread = 180.0
+initial_velocity_min = 150.0
+initial_velocity_max = 200.0
+gravity = Vector3(0, 0, 0)
+linear_accel_min = -41.86
+linear_accel_max = 6.8999977
+radial_accel_min = -32.56
+radial_accel_max = 25.289997
+
+[node name="SandSpawnParticle" type="GPUParticles2D"]
+emitting = false
+texture = ExtResource("1_wksly")
+lifetime = 0.4
+one_shot = true
+process_material = SubResource("ParticleProcessMaterial_wksly")
+script = ExtResource("2_wksly")
+
+[connection signal="finished" from="." to="." method="_on_finished"]

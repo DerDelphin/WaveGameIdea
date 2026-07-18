@@ -7,7 +7,7 @@ func _ready() -> void:
 
 func onGameWasLost() -> void:
 	self.visible = true
-	#GameLostPanel.visible = true
+	$"../DayEndPanel".visible = false
 
 
 func _on_quit_button_pressed() -> void:

@@ -22,6 +22,7 @@ GLOBAL="*res://Scripts/Management/GLOBAL.gd"
 UpgradeManager="*res://Scripts/Management/UpgradeManager.gd"
 AudioManager="*res://Scripts/Management/audio_manager.gd"
 DayInfoManager="*res://Scripts/Management/DaySpawnInfoManager.gd"
+MusicManager="*res://Scripts/Management/musicManager.gd"
 
 [display]
 

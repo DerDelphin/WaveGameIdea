@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Upgrade" load_steps=2 format=3 uid="uid://b0mwq2ejbwxw5"]
+
+[ext_resource type="Script" uid="uid://dfuf1q566o5ht" path="res://Scripts/Upgrade.gd" id="1_fkmse"]
+
+[resource]
+script = ExtResource("1_fkmse")
+name = "Wave Power +"
+id = "wave_power"
+describtion = "This Upgrade increases the power level of a wave by 1. Power is the damage you deal to sandcastles. Example: a sandcastle with 2hp can be destroyed in 1 hit with a power of 2 or more,"
+metadata/_custom_type_script = "uid://dfuf1q566o5ht"

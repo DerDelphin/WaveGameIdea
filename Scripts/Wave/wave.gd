@@ -7,6 +7,7 @@ extends Node2D
 
 var moveSound = preload("res://SFX/wave move.wav")
 var impactSound = preload("res://SFX/wave impact2.wav")
+var impactParticle = preload("res://Scenes/wave_disapear_particle.tscn")
 var combo = -1
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,7 +20,8 @@ func _process(delta: float) -> void:
 	global_position += Vector2.UP * delta * speed * UpgradeManager.WaveBaseSpeed
 	
 
-func _on_kill_timer_timeout() -> void: queue_free()
+func _on_kill_timer_timeout() -> void:
+	queue_free()
 
 func _on_area_entered(area: Area2D) -> void:
 	if(area.is_in_group("SandObj")):
@@ -29,6 +31,11 @@ func _on_area_entered(area: Area2D) -> void:
 		addComboPoints()
 		AudioManager.playAudio(impactSound,.04)
 		streamPlayer.stop()
+		#play particle animation
+		var instance = impactParticle.instantiate()
+		instance.global_position = global_position
+		print(instance.global_position)
+		add_sibling(instance)
 		queue_free()
 
 ##this function adds additional combo points, which are earned for destroying multiple Sandj with a single wave

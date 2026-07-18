@@ -1,11 +1,48 @@
-[gd_scene load_steps=5 format=3 uid="uid://cgg81n7cqfnjf"]
+[gd_scene load_steps=8 format=3 uid="uid://cgg81n7cqfnjf"]
 
 [ext_resource type="Script" uid="uid://dicd2iewrypfk" path="res://Scripts/Wave/wave.gd" id="1_s206c"]
-[ext_resource type="Texture2D" uid="uid://d0h760ntx7pgt" path="res://Sprites/Wave/wave.png" id="2_by67g"]
+[ext_resource type="Texture2D" uid="uid://bqrqan6qa2c7f" path="res://Sprites/Wave/normal/wave_normal_animation.png" id="2_0tvgk"]
 [ext_resource type="AudioStream" uid="uid://dyn7u6a045bte" path="res://SFX/wave move.wav" id="3_a6ci1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3rxug"]
 size = Vector2(98, 45)
+
+[sub_resource type="Animation" id="Animation_0tvgk"]
+resource_name = "Move"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Wave:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33, 0.66),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+
+[sub_resource type="Animation" id="Animation_7hopb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Wave:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7hopb"]
+_data = {
+&"Move": SubResource("Animation_0tvgk"),
+&"RESET": SubResource("Animation_7hopb")
+}
 
 [node name="Wave" type="Area2D"]
 scale = Vector2(0.333, 0.333)
@@ -13,7 +50,10 @@ script = ExtResource("1_s206c")
 
 [node name="Wave" type="Sprite2D" parent="."]
 scale = Vector2(3, 3)
-texture = ExtResource("2_by67g")
+texture = ExtResource("2_0tvgk")
+vframes = 3
+region_enabled = true
+region_rect = Rect2(0, 0, 32, 46)
 
 [node name="KillTimer" type="Timer" parent="."]
 unique_name_in_owner = true
@@ -28,5 +68,12 @@ unique_name_in_owner = true
 stream = ExtResource("3_a6ci1")
 volume_db = -2.0
 autoplay = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_7hopb")
+}
+autoplay = "Move"
+speed_scale = 2.0
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

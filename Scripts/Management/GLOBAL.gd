@@ -6,6 +6,7 @@ var isDayCycleRunning: bool = true
 var day_time: float = 0.0
 var dayCount: int = 1
 const DAY_DURATION := 120
+var isDayLost = false
 
 @warning_ignore("unused_signal")
 signal onPointsIncreased
@@ -14,21 +15,32 @@ signal onDayEnded
 signal newDayStarted
 signal onGameLost
 
+func _ready() -> void:
+	get_tree().scene_changed.connect(startNewDay)
+
 func _process(delta: float) -> void:
 	if(isDayCycleRunning):
 		day_time += delta
 	# Falls ein neuer Tag beginnt, wieder bei 0 starten
-	if day_time >= DAY_DURATION:
+	if day_time >= DAY_DURATION and isDayCycleRunning:
 		if points < DayInfoManager.getRequiredPoints(dayCount-1):
 			print("You lost! The water god is mad at you. You lost your power")
 			onGameLost.emit()
+			isDayLost = true
+		
 		day_time = 0.0
 		dayCount += 1
-		onDayEnded.emit()
+		if(!isDayLost): onDayEnded.emit()
 		isDayCycleRunning = false
 func isPointGoalAchieved() -> bool:
 	return points >= DayInfoManager.getRequiredPoints(dayCount-1)
-	
+
+func startNewDay() -> void:
+	if get_tree().current_scene.name == "World":
+		points = 0
+		onPointsIncreased.emit()
+		day_time = 0.0
+		isDayCycleRunning = true
 func Chance(wahrscheinlichkeit: float) -> bool:
 	# Überprüfen, ob die Wahrscheinlichkeit im gültigen Bereich liegt
 	if wahrscheinlichkeit < 0.0 or wahrscheinlichkeit > 1.0:

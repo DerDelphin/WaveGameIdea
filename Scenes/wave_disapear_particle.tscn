@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://blje2wyu8q383"]
+
+[ext_resource type="Texture2D" uid="uid://b6akg3h4yq7tf" path="res://Sprites/wave_dustParticle_2.png" id="1_t1ghn"]
+[ext_resource type="Script" uid="uid://c4tg52cnm6mjw" path="res://Scripts/particle/sand_spawn_particle.gd" id="2_vqt5g"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_t1ghn"]
+particle_flag_disable_z = true
+direction = Vector3(0, -1, 0)
+spread = 72.143
+initial_velocity_min = 39.79
+initial_velocity_max = 78.47
+angular_velocity_min = -133.33002
+angular_velocity_max = 105.68998
+gravity = Vector3(0, 0, 0)
+
+[node name="WaveDisapearParticle" type="GPUParticles2D"]
+amount = 40
+texture = ExtResource("1_t1ghn")
+lifetime = 0.3
+one_shot = true
+randomness = 0.43
+process_material = SubResource("ParticleProcessMaterial_t1ghn")
+script = ExtResource("2_vqt5g")
+
+[connection signal="finished" from="." to="." method="_on_finished"]

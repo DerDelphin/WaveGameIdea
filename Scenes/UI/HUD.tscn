@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://ui8tojsus8tx" path="res://Scenes/UI/clock.tscn" id="2_duuxe"]
 [ext_resource type="PackedScene" uid="uid://cv4l4ahc18chw" path="res://Scenes/UI/PointLabel.tscn" id="3_jfwrg"]
-[ext_resource type="PackedScene" uid="uid://k1lpj2cve4i2" path="res://Scenes/UI/upgrade_buttons.tscn" id="4_mbl0m"]
 [ext_resource type="PackedScene" uid="uid://4575efr67nyj" path="res://Scenes/UI/wave_cool_down_bar.tscn" id="6_mbl0m"]
+[ext_resource type="PackedScene" uid="uid://51s78tmcn66b" path="res://Scenes/UI/day_end_panel.tscn" id="7_1ree7"]
 [ext_resource type="PackedScene" uid="uid://cak5d5xml8lis" path="res://Scenes/UI/game_lost_panel.tscn" id="7_duuxe"]
 [ext_resource type="PackedScene" uid="uid://ctpn58msb8pi4" path="res://Scenes/UI/Overcrowd_meter.tscn" id="7_mbl0m"]
 [ext_resource type="PackedScene" uid="uid://b8tupxwr7fcdo" path="res://Scenes/UI/vignette.tscn" id="8_mbl0m"]
@@ -39,18 +39,6 @@ layout_mode = 2
 
 [node name="PointLabel" parent="Upper/MarginContainer" instance=ExtResource("3_jfwrg")]
 layout_mode = 2
-
-[node name="UpgradeButtons" parent="." instance=ExtResource("4_mbl0m")]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -112.0
-offset_top = -57.0
-offset_right = 579.0
-offset_bottom = 53.0
 
 [node name="Lower2" type="HBoxContainer" parent="."]
 visible = false
@@ -91,3 +79,16 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 grow_horizontal = 1
 grow_vertical = 1
+
+[node name="DayEndPanel" parent="." instance=ExtResource("7_1ree7")]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -114.0
+offset_top = -56.0
+offset_right = 120.0
+offset_bottom = 73.0

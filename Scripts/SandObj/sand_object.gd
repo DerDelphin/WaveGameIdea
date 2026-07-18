@@ -12,6 +12,8 @@ var destructionIndicator = preload("res://Scenes/UI/destruction_point_indicator.
 var destroyedSound = preload("res://SFX/sand_destroyed.wav")
 var damagedSound = preload("res://SFX/wave impact.wav")
 
+func _ready() -> void:
+	if($SandSpawnParticle != null): $SandSpawnParticle.restart()
 
 func TakeDamage(amount:int = 0) -> void:
 	# default (no amount provided)

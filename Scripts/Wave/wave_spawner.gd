@@ -15,7 +15,7 @@ func _ready() -> void:
 	add_child(instance)
 	
 	CooldownTimer.wait_time = UpgradeManager.WaveDelay
-	UpgradeManager.WaveDelayChanged.connect(
+	UpgradeManager.onUpgradeWasApplied.connect(
 		func(): CooldownTimer.wait_time = clamp(UpgradeManager.WaveDelay,0.001,100000))
 	var waveCoolDownBar = get_tree().get_first_node_in_group("WaveCoolDownBar")
 	if(waveCoolDownBar.has_method("updateCooldownDisplay")):

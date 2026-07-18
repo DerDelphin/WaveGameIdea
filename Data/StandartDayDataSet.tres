@@ -5,8 +5,8 @@
 
 [sub_resource type="Resource" id="Resource_bog5r"]
 script = ExtResource("1_bog5r")
-PointsNeeded = 4
-ObjectsNeededForOvercrowding = 10
+PointsNeeded = 50
+ObjectsNeededForOvercrowding = 100
 metadata/_custom_type_script = "uid://cedc0rje0w8fa"
 
 [sub_resource type="Resource" id="Resource_thlgf"]

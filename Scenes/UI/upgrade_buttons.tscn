@@ -3,15 +3,15 @@
 [ext_resource type="Script" uid="uid://bkveohay8tntx" path="res://Scripts/UI/upgrade_buttons.gd" id="1_a5q5l"]
 
 [node name="UpgradeButtons" type="HBoxContainer"]
-anchors_preset = -1
-anchor_left = 0.409
-anchor_top = 0.551
-anchor_right = 0.645
-anchor_bottom = 0.61
-offset_left = -101.0
-offset_top = -146.0
-offset_right = 36.0
-offset_bottom = -36.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -335.5
+offset_top = -40.0
+offset_right = 335.5
+offset_bottom = 40.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.333, 0.333)
@@ -23,7 +23,7 @@ script = ExtResource("1_a5q5l")
 layout_mode = 2
 size_flags_horizontal = 6
 theme_override_font_sizes/font_size = 56
-text = "U1"
+text = "Upgrade 1"
 
 [node name="UpgradeButton2" type="Button" parent="."]
 layout_mode = 2
@@ -36,3 +36,7 @@ layout_mode = 2
 size_flags_horizontal = 6
 theme_override_font_sizes/font_size = 56
 text = "Upgrade 3"
+
+[connection signal="mouse_entered" from="NextDayButton" to="." method="on_button1_hover"]
+[connection signal="mouse_entered" from="UpgradeButton2" to="." method="_on_upgrade_button_2_mouse_entered"]
+[connection signal="mouse_entered" from="UpgradeButton3" to="." method="_on_upgrade_button_3_mouse_entered"]
